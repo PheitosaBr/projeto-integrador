@@ -1,0 +1,55 @@
+*Projeto Integrador - Programador de Sistemas - SENAC*
+*Produto:* BOT para gerencia de gastos pessoais.
+*Requisitos:* Um site para divulgar, explicar sobre o produto e solicitar compra.
+
+*Tarefas de Cada Integrante*
+*- Gerencia do Projeto:*
+_Marcos_
+	✅ Definir prazos e acompanhar o progresso.
+	✅ Coordenar reuniões e garantir comunicação entre os membros.
+_Daniel e Miguel_
+	✅ Revisar entregas e garantir que o projeto siga o planejamento.
+
+*- Designer UI/UX:*
+_Marcos_
+	✅ Criar wireframes e protótipos do site.
+_Adriane e Neiva_
+	✅ Definir cores, fontes e identidade visual.
+_Miguel e Neiva_
+	✅ Criar imagens e ícones para o site.
+_Marcos_
+	✅ Garantir que o design seja responsivo e acessível.
+
+*- Desenvolvedores Frontend*
+_Miguel e Neiva_
+	✅ Criar a estrutura do site com HTML e CSS.
+_Marcos_	
+	✅ Implementar Bootstrap para estilização.
+	✅ Adicionar JavaScript para interatividade.
+	✅ Garantir que o site seja responsivo e compatível com diferentes dispositivos.
+
+*- Desenvolvedores Backend*
+_Adriane e Neiva_
+	✅ Criar lista de categorias e subcategorias para o produto.
+_Daniel_
+	✅ Configurar o banco de dados (MySQL, Firebase, etc.).
+	✅ Criar API REST para comunicação entre frontend e backend.
+	✅ Implementar segurança (proteção contra ataques e autenticação).
+_TODOS_
+	✅ Testar e otimizar o desempenho do servidor.
+
+*- Gerencia de Infraestrutura*
+_Marcos_
+	✅ Criar e configurar o repositório no GitHub.
+	✅ Definir branches para cada integrante.
+_Daniel_
+	✅ Configurar GitHub Pages ou outra hospedagem.
+	✅ Gerenciar o deploy do site e garantir que esteja sempre atualizado.
+_Miguel, Adriane, Neiva_
+	✅ Criar e/ou organizar documentação README para o GitHub.
+
+*- Apresentação do projeto*
+_Adriane e Neiva_
+	✅ Exibir e apresentar o projeto final para os ouvintes.
+_Miguel, Daniel e Marcos_
+	✅ Esclarecer dúvidas técnicas do desenvolvimento, tecnologias e recursos.
