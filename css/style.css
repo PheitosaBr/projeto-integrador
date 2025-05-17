@@ -41,21 +41,33 @@
     user-select: none;
   }
 
-  .b-example-divider {
+/*
+ * Barra Divisória
+ */
+  .b-example-divider-1 {
     margin-top: 0 !important;
     width: 100%;
-    height: 1.5rem;
+    height: 1rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
   }
-
+    .b-example-divider-2 {
+    margin-top: 0 !important;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
   .b-example-vr {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
   }
+ /* Fim Barra Divisória*/
 
   .bi {
     vertical-align: -.125em;
@@ -126,7 +138,7 @@
 }
 
 /*
- * Custom translucent site header
+ * Cabeçalho de site translúcido personalizado
  */
 
 .site-header {
@@ -144,7 +156,7 @@
 }
 
 /*
- * Dummy devices (replace them with your own or something else entirely!)
+ * Dispositivos fictícios (substitua-os pelos seus ou por algo totalmente diferente!)
  */
 
 .product-device {
@@ -178,12 +190,12 @@
 }
 
 /*
- * Customizações extra Bootstrap
+ * Customizações extra ao Bootstrap
  */
-.botao {
+.b-verde-destaque {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #4CAF50;
+  background-color: #45a049;
   color: white;
   text-decoration: none;
   font-size: 1em;
@@ -192,8 +204,14 @@
   margin-top: 20px;
 }
 
-.botao:hover {
-  background-color: #45a049;
+.b-verde-destaque:hover {  
+  background-color: #4CAF50;
 }
-
-
+.nav-link-div:hover, .nav-link-div:focus{
+  height: 3.35rem !important;   
+  background-color: rgba(0, 0, 0, .3);  
+}
+.nav-link-div:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
