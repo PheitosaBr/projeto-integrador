@@ -3832,7 +3832,7 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: flex;
+  display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);  
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
@@ -3841,6 +3841,7 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  height: 3rem !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -3857,7 +3858,8 @@ textarea.form-control-lg {
   border: none;
   color: white;
   box-sizing: border-box; 
-  padding-left: 10px; 
+  padding-left: 10px;
+  
  }
 
 .nav-link:focus-visible {
