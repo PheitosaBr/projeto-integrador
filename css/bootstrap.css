@@ -9088,8 +9088,12 @@ textarea.form-control-lg {
   border-top-right-radius: var(--bs-border-radius-xxl) !important;
   border-bottom-right-radius: var(--bs-border-radius-xxl) !important;
 }
+.rounded-end-circle-25 {
+  border-top-right-radius: 25% !important;
+  border-bottom-right-radius: 25% !important;
+}
 
-.rounded-end-circle {
+.rounded-end-circle-50 {
   border-top-right-radius: 50% !important;
   border-bottom-right-radius: 50% !important;
 }
