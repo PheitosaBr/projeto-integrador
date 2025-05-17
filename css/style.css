@@ -212,7 +212,7 @@
 
 .b-verde-destaque {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 25px;
   background-color: #45a049;
   color: white;
   text-decoration: none;
@@ -225,9 +225,8 @@
 .b-verde-destaque:hover {  
   background-color: #4CAF50;
 }
-.nav-link-div:hover, .nav-link-div:focus{
-  height: 3.35rem !important;   
-  background-color: rgba(0, 0, 0, .3);  
+.nav-link-div:hover, .nav-link-div:focus{  
+  background-color: rgba(0, 0, 0, .4);  
 }
 .nav-link-div:focus-visible {
   outline: 0;
