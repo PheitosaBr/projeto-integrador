@@ -224,6 +224,7 @@
 
 .b-verde-destaque:hover {  
   background-color: #4CAF50;
+  
 }
 .nav-link-div:hover, .nav-link-div:focus{  
   background-color: rgba(0, 0, 0, .4);  
