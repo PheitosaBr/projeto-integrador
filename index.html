@@ -102,7 +102,7 @@
         <header class="hideen"><!--O Header está escondido, sem uso-->
         </header>
 
-          <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark"><!--Conteúdo visível do site-->
+          <nav class="navbar navbar-expand-md bg-dark sticky-top m-0 d-flex p-2 navbar-h50" data-bs-theme="dark"><!--Conteúdo visível do site-->
             <div class="container">
               <a class="navbar-brand d-md-none" href="#">
                 <svg class="bi" width="24" height="24" aria-hidden="true">
@@ -113,21 +113,20 @@
                       <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
                     </symbol>
                   </use>
-                </svg>Nome empresa
+                </svg> Nome empresa
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5> 
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Nome empresa</h5> 
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
                 </div>                
-                <div class="offcanvas-body"> 
+                <div class="offcanvas-body "> 
                   <ul class="navbar-nav flex-grow-1 justify-content-between"> 
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" aria-label="Aperture"> 
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
+                    <li class="nav-item"><a class="nav-link auto" href="#" aria-label="Aperture"> 
+                        <svg class="bi ms-0" width="24" height="24" aria-hidden="true">
                           <use xlink:href="#aperture">
                             #shadow-root (closed)
                             <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
@@ -138,14 +137,46 @@
                         </svg> 
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Recursos</a></li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">FAQs</a></li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" aria-label="Cart"> 
+                    <div>
+                      <li class="nav-item"><a href="#" class="nav-link">Recursos</a></li>
+                    </div>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
+                        <svg class="bi" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="#cart">
+                            #shadow-root (closed)
+                            <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
+                          </use>
+                        </svg> 
+                      </a>
+                    </li> 
+                  </ul> 
+                </div>
+              </div>
+              <div id="offcanvas" class="offcanvas offcanvas-end visually-hidden" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header"> 
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Nome empresa</h5> 
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                </div>                
+                <div class="offcanvas-body"> 
+                  <ul class="navbar-nav flex-grow-1 justify-content-between"> 
+                    <li class="nav-item"><a class="nav-link" href="#" aria-label="Aperture"> 
+                        <svg class="bi ms-0" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="#aperture">
+                            #shadow-root (closed)
+                            <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
+                              <circle cx="12" cy="12" r="10"></circle> 
+                              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
+                            </symbol>
+                          </use>
+                        </svg> 
+                      </a>
+                    </li>                    
+                    <li class="nav-item-offcanvas"><a href="#" class="nav-link-offcanvas">Recursos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
                         <svg class="bi" width="24" height="24" aria-hidden="true">
                           <use xlink:href="#cart">
                             #shadow-root (closed)
@@ -162,25 +193,42 @@
         <div class="b-example-divider"></div>      
         <main>
           <!--Conteúdo do site AQUI-->
-          <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5"></div>
-            <div class="col-10 col-sm-8 col-lg-6">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <!--Imagem de Feature-->
+          <section class="features">
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">             
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <!--Imagem de Feature-->
+                </div>
+                <div class="col-lg-6">                  
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
+                  <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
+                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="index2.html" class="botao">Comece agora</a>                    
+                </div>
               </div>
-              <div class="col-gl-6">
-                <section class="">
-                  <h1 class="display-5 fw-bold lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
-                  <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>
-                  <a href="index2.html" class="botao">Comece agora</a>                  
-                  <!-- Substitua o caminho abaixo pela imagem real -->
-                  <img src="exemplo-typebot.png" alt="Demonstração do Typebot" class="demo" />
-                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p>
-                  </section> 
-              </div>
-          </div>
-
-         
+            </div>
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">                  
+                  <h2>Transforme sua gestão financeira com o Typebot</h2>
+                  <p class="destaque">Chega de planilhas complicadas. O Typebot te entrega respostas, alertas e decisões inteligentes — tudo em um só lugar.</p>
+                  <ul class="beneficios">
+                    <li><strong>💬 Interface Conversacional:</strong> fale com seus dados como se estivesse no WhatsApp.</li>
+                    <li><strong>📊 Análises Automatizadas:</strong> entenda para onde vai seu dinheiro sem esforço.</li>
+                    <li><strong>⚡ Respostas em Tempo Real:</strong> receba alertas sobre oportunidades e riscos.</li>
+                    <li><strong>🔒 Segurança Total:</strong> seus dados protegidos com criptografia de ponta.</li>
+                  </ul>
+                  <div class="call-to-action">
+                    <p><strong>Comece agora com 7 dias grátis.</strong></p>
+                    <a href="#" class="botao">Quero experimentar</a>
+                  </div>                  
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <!--Imagem de Feature-->
+                </div>
+            </div>
+          </section>         
         </main><!--Fim Conteúdo visível do site-->
         <script src="js/bootstrap.bundle.min.js"></script> 
     </body>
