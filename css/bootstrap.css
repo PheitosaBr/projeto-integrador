@@ -3832,7 +3832,7 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: block;
+  display: flex;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);  
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
@@ -3854,11 +3854,10 @@ textarea.form-control-lg {
   font-weight: var(--bs-nav-link-font-weight);
   text-decoration: none;  
   border-radius: 10px;  
-  background-color: rgba(0, 0, 0, .2);
+  /*background-color: rgba(0, 0, 0, .2);*/
   border: none;
   color: white;
   box-sizing: border-box; 
-  padding-left: 10px;
   
  }
 
