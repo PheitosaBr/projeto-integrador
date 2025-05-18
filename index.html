@@ -104,9 +104,9 @@
 
           <nav class="navbar navbar-expand-md bg-dark sticky-top m-0 d-flex p-0 h-75" data-bs-theme="dark"><!--Conteúdo visível do site-->
             <div class="container">
-              <a class="navbar-brand d-md-none" href="#">
-                <svg class="bi rounded-circle" width="34" height="34" aria-hidden="true">
-                  <image xlink:href="midia/img/robo_money.png" width="34" height="34" alt="ícone da empresa"></image>
+              <a class="navbar-brand d-md-none " width="45" height="45" href="index.html"><!--MENU escondido em telas menores-->
+                <svg class="bi rounded-circle bg-white" width="45" height="45" aria-hidden="true">
+                  <image xlink:href="midia/img/logo/logo_3_sem_fundo.png" width="45" height="45" alt="ícone da empresa"></image>
                   <!--<use xlink:href="#aperture" alt="ícone da empresa">
                     #shadow-root (closed)
                     <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
@@ -114,21 +114,21 @@
                       <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
                     </symbol>
                   </use>-->
-                </svg> Control Money
+                </svg>
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"><!--Botão para chamar o menu offcanvas-->
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvasLabel">
+              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvasLabel"><!--MENU escondido offcanvas em telas menores-->
                 <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Control Money</h5> 
+                  <h5 class="offcanvas-title" id="offcanvasLabel"></h5> 
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
                 </div>                
-                <div class="offcanvas-body "> 
-                  <ul class="navbar-nav flex-grow-1 justify-content-between px-3 py-3"> 
-                    <div class="nav-link-div px-3 py-3 rounded-3" width="24" height="24"><li class="nav-item"><a class="nav-link " href="index.html" aria-label="Aperture"> 
-                        <svg class="bi rounded-circle" width="24" height="24" aria-hidden="true">
-                          <image xlink:href="midia/img/robo_money.png" width="24" height="24" alt="ícone da empresa"></image>
+                <div class="offcanvas-body row "><!--MENU em telas maiores-->
+                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between px-3 py-3"> 
+                    <div class="nav-link-div px-2 py-4 pt-2 rounded-3"><li class="nav-item "><a class="nav-link" href="index.html" aria-label="Aperture"> 
+                      <svg class="bi rounded-circle bg-white " width="45" height="45" aria-hidden="true">
+                        <image class="mt-n5 py-n5" xlink:href="midia/img/logo/logo_3_sem_fundo.png" width="45" height="45" alt="ícone da empresa"></image>
                           <!--<use xlink:href="#aperture">
                             #shadow-root (closed)
                             <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
@@ -136,10 +136,12 @@
                               <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
                             </symbol>
                           </use>-->
-                        </svg> 
-                      </a>
-                    </li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
+                          </svg> 
+                        </a>
+                      </li>
+                    </div>
+                    <h1 class="h5 "><strong>Control Money</strong></h1>
+                    <div class="nav-link-div px-2 py-3 rounded-3 text-decoration-none"><li class="nav-item text-decoration-none"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
                     <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li></div>
                     <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">FAQs</a></li></div>
                     <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
@@ -153,58 +155,25 @@
                     </li></div> 
                   </ul> 
                 </div>
-              </div>
-              <div id="offcanvas" class="offcanvas offcanvas-end visually-hidden" aria-labelledby="offcanvasLabel">
-                <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Control Money</h5> 
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-                </div>                
-                <div class="offcanvas-body"> 
-                  <ul class="navbar-nav flex-grow-1 justify-content-between"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Aperture"> 
-                        <svg class="bi rounded-circle" width="24" height="24" aria-hidden="true">
-                          <image xlink:href="midia/img/robo_money.png" width="24" height="24" alt="ícone da empresa"></image>
-                          <!-- <use xlink:href="#aperture">
-                            #shadow-root (closed)
-                            <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                              <circle cx="12" cy="12" r="10"></circle> 
-                              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                            </symbol>
-                          </use> -->
-                        </svg> 
-                      </a>
-                    </li>                    
-                    <li class="nav-item-offcanvas"><a href="#conteudo_recursos" class="nav-link-offcanvas">Recursos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="#cart">
-                            #shadow-root (closed)
-                            <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
-                          </use>
-                        </svg> 
-                      </a>
-                    </li> 
-                  </ul> 
-                </div>
-              </div>                  
+              </div><!--Fim MENU offcanvas escondido para tela menores-->
+              
+                 
             </div>
           </nav>
         <div class="b-example-divider-1"></div>      
         <main>
-          <!--Conteúdo do site AQUI-->
+          <!--Conteúdo dos recursos estático-->
           <section id="conteudo_recursos" class="pt-1">
             <div class="container col-xxl-8 mt-5 px-4 py-5">
               <div class="row flex-lg-row-reverse align-items-center g- py-1">             
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <img src="midia/img/1x1/Exemplo_app_1x1_3.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
                   <!--Imagem do produto-->
                 </div>
                 <div class="col-lg-6">                  
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
-                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="#" class="b-verde-destaque">Comece agora</a>                    
+                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="#" class="b-verde-destaque" data-bs-toggle="modal" data-bs-target="#saiba-mais-1">Saiba Mais</a>                    
                 </div>
               </div>
             </div>
@@ -221,68 +190,84 @@
                   </ul>
                   <div class="call-to-action">
                     <p><strong>Comece agora com 7 dias grátis.</strong></p>
-                    <a href="#" class="b-verde-destaque">Quero experimentar</a>
+                    <a href="#" class="b-verde-destaque">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <img src="midia/img/1x1/Exemplo_app_1x1_6.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
                   <!--Imagem do produto-->
                 </div>
             </div>
           </section id="carrossel_recursos">
-          <div class="b-example-divider-1"></div>
-          <section class="">
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel"> 
-              <div class="carousel-indicators"> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button> 
-              </div> 
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="midia/img/chatbot_gerenciador1.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto"> 
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
-                  <div class="container"> 
-                    <div class="carousel-caption text-start"> 
-                      <h1 class="text-warning">Exemplo de título.</h1> 
-                      <p class="opacity-75">Algum conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Inscreva-se hoje</a></p> 
-                    </div> 
-                  </div> 
+          <!--Conteúdo dos Modais-->
+          <div id="saiba-mais-1" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Finanças com inteligência</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="carousel-item">                        
-                  <img src="midia/img/chatbot_gerenciador2.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto">  
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container">  -->
-                  <div class="container">
-                    <div class="carousel-caption"> 
-                      <h1 class="text-danger">Outro exemplo de título.</h1> 
-                      <p>Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Leia mais</a></p> 
-                    </div>
-                  </div>
+                <div class="modal-body">
+                  <p>Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase...</p>
                 </div>
-                <div class="carousel-item">
-                  <img src="midia/img/chatbot_gerenciador3.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto">  
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
-                  <div class="container"> 
-                    <div class="carousel-caption text-end"> 
-                      <h1>Mais uma para garantir.</h1> 
-                      <p>Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Função</a></p> 
-                    </div> 
-                  </div> 
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                  
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> 
+            </div>
+          </div>
+          <!--Fim Conteúdo dos Modais-->
+          <!--Fim Conteúdo dos recursos estático-->
+          <div class="b-example-divider-1"></div>
+
+          <section class=""><!--Conteúdo dos recursos Coarrossel-->
+            <div id="myCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
+              <div class="carousel-indicators"> 
+                <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div> 
+              <div class="carousel-inner">
+                <div id="0" class="carousel-item active">
+                  <img class="d-block w-100" src="midia/img/carrosel/Exemplo_app_16x9_1.png" alt="imagem do produto"> 
+                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
+                  <div class="carousel-caption d-none d-md-block">                    
+                    <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Exemplo de título.</h1> 
+                    <p class="opacity-75 text-bg-warning rounded-3 p-1">Algum conteúdo de espaço reservado representativo para o primeiro slide do carrossel.<p> 
+                    <!-- <p><a class="b-verde-destaque btn-lg" href="#">Inscreva-se hoje</a></p>-->                     
+                  </div> 
+                </div>
+                <div id="1" class="carousel-item">                        
+                  <img class="d-block w-100" src="midia/img/carrosel/Exemplo_app_16x9_2.png" alt="imagem do produto">  
+                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container">  -->                  
+                  <div class="carousel-caption d-none d-md-block">  
+                    <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Outro exemplo de título.</h1> 
+                    <p class="opacity-75 text-bg-light rounded-3 p-1">Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
+                    <!-- <p><a class="b-verde-destaque btn-lg" href="#">Leia mais</a></p>-->                    
+                  </div>
+                </div>
+                <div id="2" class="carousel-item">
+                  <img class="d-block w-100" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
+                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->                  
+                  <div class="carousel-caption d-none d-md-block">  
+                    <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Mais uma para garantir.</h1> 
+                    <p class="opacity-75 text-bg-primary rounded-3 p-2 mb-0">Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
+                    <!-- <p><a class="b-verde-destaque btn-lg" href="#">Função</a></p>-->
+                  </div>                   
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="prev"> 
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
                 <span class="visually-hidden">Previous</span> 
               </button> 
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> 
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="next"> 
                 <span class="carousel-control-next-icon" aria-hidden="true"></span> 
                 <span class="visually-hidden">Next</span> 
               </button>
             </div>
-          </section>          
+          </section><!--Fim Conteúdo dos recursos Coarrossel-->
+        <div class="b-example-divider-1"></div>
+
 
         </main><!--Fim Conteúdo do site-->
         <div class="b-example-divider-1"></div>
