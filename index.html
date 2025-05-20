@@ -160,11 +160,11 @@
                  
             </div>
           </nav>
-        <div class="b-example-divider-1"></div>      
+        <div class="b-example-divider-1"></div><!--Barra de divisão-->      
         <main>
           <!--Conteúdo dos recursos estático-->
           <section id="conteudo_recursos" class="pt-1">
-            <div class="container col-xxl-8 mt-5 px-4 py-5">
+            <div class="container col-xxl-8 mt-5 px-4 py-5"><!--Conteúdo do recurso estático 1-->
               <div class="row flex-lg-row-reverse align-items-center g- py-1">             
                 <div class="col-10 col-sm-8 col-lg-6">
                   <img src="midia/img/1x1/Exemplo_app_1x1_3.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
@@ -173,11 +173,11 @@
                 <div class="col-lg-6">                  
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
-                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="#" class="b-verde-destaque" data-bs-toggle="modal" data-bs-target="#saiba-mais-1">Saiba Mais</a>                    
+                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="#" onclick="carregarModal('saiba-mais-1')" class="b-verde-destaque" >Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
                 </div>
               </div>
-            </div>
-            <div class="container col-xxl-8 px-4 py-5">
+            </div><!-- Fim Conteúdo do recurso estático 1-->
+            <div class="container col-xxl-8 px-4 py-5"><!--Conteúdo do recurso estático 2-->
               <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
                 <div class="col-lg-6">                  
                   <h2>Transforme sua gestão financeira com o Typebot</h2>
@@ -190,37 +190,23 @@
                   </ul>
                   <div class="call-to-action">
                     <p><strong>Comece agora com 7 dias grátis.</strong></p>
-                    <a href="#" class="b-verde-destaque">Saiba Mais</a>
+                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="b-verde-destaque">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="midia/img/1x1/Exemplo_app_1x1_6.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
-                  <!--Imagem do produto-->
+                  <img src="midia/img/1x1/Exemplo_app_1x1_6.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy"><!--Imagem do produto-->
                 </div>
-            </div>
-          </section id="carrossel_recursos">
+            </div><!-- Fim Conteúdo do recurso estático 2-->
+          </section>
           <!--Conteúdo dos Modais-->
-          <div id="saiba-mais-1" class="modal" tabindex="-1">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Finanças com inteligência</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase... Texto mais completo do recurso em ênfase...</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                  
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="modalContainer"></div>
           <!--Fim Conteúdo dos Modais-->
           <!--Fim Conteúdo dos recursos estático-->
-          <div class="b-example-divider-1"></div>
 
-          <section class=""><!--Conteúdo dos recursos Coarrossel-->
+          <div class="b-example-divider-1"></div><!--Barra de divisão-->
+          
+          <!--Conteúdo dos recursos Coarrossel-->
+          <section id="carrossel_recursos" class=""><!--Conteúdo dos recursos Coarrossel-->
             <div id="myCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
               <div class="carousel-indicators"> 
                 <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -266,11 +252,10 @@
               </button>
             </div>
           </section><!--Fim Conteúdo dos recursos Coarrossel-->
-        <div class="b-example-divider-1"></div>
-
-
         </main><!--Fim Conteúdo do site-->
-        <div class="b-example-divider-1"></div>
+
+        <div class="b-example-divider-1"></div><!--Barra de divisão-->
+
         <!--Começo do Rodapé-->
         <div class="container h-100 d-inline">
             <footer class="container d-flex flex-wrap justify-content-between align-items-center">
@@ -289,6 +274,7 @@
             </footer>
           </div><!--Fim do Rodapé--> 
         <div class="b-example-divider-4"></div>
-        <script src="js/bootstrap.bundle.min.js"></script> 
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/modais.js"></script>
     </body>
 </html>
