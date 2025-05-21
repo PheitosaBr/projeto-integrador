@@ -7,8 +7,14 @@ function carregarModal(modalId) {
     fetch('pages/modais.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('modalContainer').innerHTML = data;
+            let modalContainer = document.getElementById('modalContainer');
+            modalContainer.innerHTML = data; // Insere o conteúdo da página de modais
             let modalElement = document.getElementById(modalId);
-            new bootstrap.Modal(modalElement).show();
+            if (modalElement) {
+                new bootstrap.Modal(modalElement).show();
+            } else {
+                console.error("Modal não encontrado: " + modalId);
+            }
         });
 }
+

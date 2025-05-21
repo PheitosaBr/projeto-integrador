@@ -142,7 +142,7 @@
                     <h1 class="h5 "><strong>Control Money</strong></h1>
                     <div class="nav-link-div px-2 py-3 rounded-3 text-decoration-none"><li class="nav-item text-decoration-none"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
                     <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">FAQs</a></li></div>
+                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#FAQs" class="nav-link">FAQs</a></li></div>
                     <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
                         <svg class="bi" width="24" height="24" aria-hidden="true">
                           <use xlink:href="#cart">
@@ -154,9 +154,7 @@
                     </li></div> 
                   </ul> 
                 </div>
-              </div><!--Fim MENU offcanvas escondido para tela menores-->
-              
-                 
+              </div><!--Fim MENU offcanvas escondido para tela menores-->                 
             </div>
           </nav>
         <div class="b-example-divider-1"></div><!--Barra de divisão-->      
@@ -173,7 +171,7 @@
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
                   <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p>
-                  <a href="#" onclick="carregarModal('saiba-mais-1')" class="b-verde-destaque">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
+                  <a href="#" onclick="carregarModal('saiba-mais-1')" class="btn b-verde-destaque">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
                 </div>
               </div>
             </div><!-- Fim Conteúdo do recurso estático 1-->
@@ -190,7 +188,7 @@
                   </ul>
                   <div class="call-to-action">
                     <p><strong>Comece agora com 7 dias grátis.</strong></p>
-                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="b-verde-destaque">Saiba Mais</a>
+                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="btn b-verde-destaque">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -256,6 +254,41 @@
 
         <div class="b-example-divider-1"></div><!--Barra de divisão-->
 
+        <div id="FAQs" class="container mt-4"><!--Conteúdo das FAQs-->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  PERGUNTA FREQUENTE Nº 1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Resposta da pergunta<code> "palavra chave de destaque".</code> Este é o corpo sanfonado do primeiro item.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  PERGUNTA FREQUENTE Nº 2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do segundo item. Vamos imaginar que ele esteja preenchido com algum conteúdo real.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  PERGUNTA FREQUENTE Nº 3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Fim Conteúdo das FAQs-->
+
         <!--Começo do Rodapé-->
         <div class="container h-100 d-inline">
             <footer class="container d-flex flex-wrap justify-content-between align-items-center">
@@ -269,13 +302,17 @@
                 <!-- <li class="nav-item"><a href="#topo" class="nav-link px-2 text-body-secondary">Topo</a></li> -->
                 <li class="nav-item"><a href="#conteudo_recursos" class="nav-link px-2 text-body-secondary">Recursos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-body-secondary">FAQs</a></li>
               </ul> 
             </footer>
           </div><!--Fim do Rodapé--> 
-        <div class="b-example-divider-4"></div>
+        <div class="b-example-divider-4"></div>       
+
+
+        <!--Scripts-->
         <script src="js/color-modes.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/modais.js"></script>
+        <!-- <script src="js/modal.js"></script> -->
     </body>
 </html>
