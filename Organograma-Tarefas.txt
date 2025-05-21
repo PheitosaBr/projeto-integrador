@@ -1,55 +1,68 @@
 *Projeto Integrador - Programador de Sistemas - SENAC*
 *Produto:* BOT para gerencia de gastos pessoais.
 *Requisitos:* Um site para divulgar, explicar sobre o produto e solicitar compra.
+*Ferramenta de comunicação entre os membros: Google Meet
 
-*Tarefas de Cada Integrante*
+*Tarefas para Cada Integrante*
 *- Gerencia do Projeto:*
 _Marcos_
-	✅ Definir prazos e acompanhar o progresso.
-	✅ Coordenar reuniões e garantir comunicação entre os membros.
+	⚫ Definir prazos e acompanhar o progresso.
+	⚫ Coordenar reuniões e garantir comunicação entre os membros.
 _Daniel e Miguel_
-	✅ Revisar entregas e garantir que o projeto siga o planejamento.
+	⚫ Revisar entregas e garantir que o projeto siga o planejamento.
 
 *- Designer UI/UX:*
 _Marcos_
-	✅ Criar wireframes e protótipos do site.
+	⚫ Criar wireframes e protótipos do site.✅
+	⚫ Garantir que o design seja responsivo e acessível.✅
 _Adriane e Neiva_
-	✅ Definir cores, fontes e identidade visual.
+	⚫ Definir cores, fontes e identidade visual.
 _Miguel e Neiva_
-	✅ Criar imagens e ícones para o site.
-_Marcos_
-	✅ Garantir que o design seja responsivo e acessível.
+	⚫ Criar imagens e ícones para o site.
 
 *- Desenvolvedores Frontend*
 _Miguel e Neiva_
-	✅ Criar a estrutura do site com HTML e CSS.
+	⚫ Criar a estrutura do site com HTML e CSS.
 _Marcos_	
-	✅ Implementar Bootstrap para estilização.
-	✅ Adicionar JavaScript para interatividade.
-	✅ Garantir que o site seja responsivo e compatível com diferentes dispositivos.
+	⚫ Implementar Bootstrap para estilização.✅
+	⚫ Adicionar JavaScript para interatividade.✅
+	⚫ Garantir que o site seja responsivo e compatível com diferentes dispositivos.✅
 
 *- Desenvolvedores Backend*
 _Adriane e Neiva_
-	✅ Criar lista de categorias e subcategorias para o produto.
+	⚫ Criar lista de categorias e subcategorias para o produto.
 _Daniel_
-	✅ Configurar o banco de dados (MySQL, Firebase, etc.).
-	✅ Criar API REST para comunicação entre frontend e backend.
-	✅ Implementar segurança (proteção contra ataques e autenticação).
+	⚫ Configurar o banco de dados (Planilha Google Sheets).
+	⚫ Configurar (TypeBot) API REST para comunicação entre frontend e backend.
+	⚫ Implementar segurança (proteção contra ataques e autenticação).
 _TODOS_
-	✅ Testar e otimizar o desempenho do servidor.
+	⚫ Testar e otimizar o desempenho do site e produto até a conclusaão final.
 
 *- Gerencia de Infraestrutura*
 _Marcos_
-	✅ Criar e configurar o repositório no GitHub.
-	✅ Definir branches para cada integrante.
-_Daniel_
-	✅ Configurar GitHub Pages ou outra hospedagem.
-	✅ Gerenciar o deploy do site e garantir que esteja sempre atualizado.
-_Miguel, Adriane, Neiva_
-	✅ Criar e/ou organizar documentação README para o GitHub.
+	⚫ Criar e configurar o repositório no GitHub.✅ 
+	⚫ Definir branches para cada integrante.✅
+	⚫ Configurar GitHub Pages ou outra hospedagem.✅
+	⚫ Criar e/ou organizar documentação README para o GitHub.
+_Daniel_	
+	⚫ Gerenciar o deploy do site e garantir que esteja sempre atualizado.
 
 *- Apresentação do projeto*
+_TODOS_
+	⚫ Apresentação prévia, em sala de aula para o professor.
 _Adriane e Neiva_
-	✅ Exibir e apresentar o projeto final para os ouvintes.
+	⚫ Exibir e apresentar o projeto final para os ouvintes.
 _Miguel, Daniel e Marcos_
-	✅ Esclarecer dúvidas técnicas do desenvolvimento, tecnologias e recursos.
+	⚫ Esclarecer dúvidas técnicas do desenvolvimento, tecnologias e recursos.
+	
+*Referências:*
+ *Frameworks e Estilização*
+   - Bootstrap: [https://getbootstrap.com/docs/5.3/getting-started/introduction/] e [https://getbootstrap.com/docs/5.3/getting-started/introduction/]
+  
+
+*API e Integrações*
+   - TypeBot API REST: [https://docs.typebot.io/get-started/introduction]
+   - Google Sheets API para banco de dados: [https://workspace.google.com/intl/pt-BR/products/sheets/]
+
+*Infraestrutura e Deploy*
+   - GitHub Pages: https://pages.github.com/
