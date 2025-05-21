@@ -194,7 +194,7 @@
 /*
  * Customizações extra ao Bootstrap
  */
-   .h-25{
+  .h-25{
     height: 25px !important;
   }
   .h-50{
@@ -208,6 +208,12 @@
   }
   .h-125{
     height: 125px !important;
+  }
+  .h-p50{
+    height: 50% !important;
+  }
+  .h-p75{
+    height: 75% !important;
   }
 
 .b-verde-destaque {
