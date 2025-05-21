@@ -6032,6 +6032,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  
 }
 
 .carousel.pointer-event {
@@ -7728,6 +7729,9 @@ textarea.form-control-lg {
   height: auto !important;
 }
 
+.mh-75 {
+  max-height: 75% !important;
+}
 .mh-100 {
   max-height: 100% !important;
 }
