@@ -1,4 +1,5 @@
 *Projeto Integrador - Programador de Sistemas - SENAC*
+*Data de entrega: 09/06/2025*
 *Produto:* BOT para gerencia de gastos pessoais.
 *Requisitos:* Um site para divulgar, explicar sobre o produto e solicitar compra.
 *Ferramenta de comunicação entre os membros: Google Meet
