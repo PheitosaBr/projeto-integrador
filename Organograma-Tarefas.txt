@@ -7,10 +7,10 @@
 *Tarefas para Cada Integrante*
 *- Gerencia do Projeto:*
 _Marcos_
-	⚫ Definir prazos e acompanhar o progresso.
+	⚫ Definir prazos e acompanhar o progresso.✅
 	⚫ Coordenar reuniões e garantir comunicação entre os membros.
-_Daniel e Miguel_
-	⚫ Revisar entregas e garantir que o projeto siga o planejamento.
+_Daniel e Miguel_✅
+	⚫ Revisar entregas e garantir que o projeto siga o planejamento.✅
 
 *- Designer UI/UX:*
 _Marcos_
@@ -23,7 +23,7 @@ _Miguel e Neiva_
 
 *- Desenvolvedores Frontend*
 _Miguel e Neiva_
-	⚫ Criar a estrutura do site com HTML e CSS.
+	⚫ Criar a estrutura do site com HTML e CSS.✅
 _Marcos_	
 	⚫ Implementar Bootstrap para estilização.✅
 	⚫ Adicionar JavaScript para interatividade.✅
@@ -31,11 +31,11 @@ _Marcos_
 
 *- Desenvolvedores Backend*
 _Adriane e Neiva_
-	⚫ Criar lista de categorias e subcategorias para o produto.
+	⚫ Criar lista de categorias e subcategorias para o produto.✅
 _Daniel_
-	⚫ Configurar o banco de dados (Planilha Google Sheets).
-	⚫ Configurar (TypeBot) API REST para comunicação entre frontend e backend.
-	⚫ Implementar segurança (proteção contra ataques e autenticação).
+	⚫ Configurar o banco de dados (Planilha Google Sheets).✅
+	⚫ Configurar (TypeBot) API REST para comunicação entre frontend e backend.✅
+	⚫ Implementar segurança (proteção contra ataques e autenticação).✅
 _TODOS_
 	⚫ Testar e otimizar o desempenho do site e produto até a conclusaão final.
 
@@ -50,9 +50,10 @@ _Daniel_
 
 *- Apresentação do projeto*
 _TODOS_
-	⚫ Apresentação prévia, em sala de aula para o professor.
+	⚫ Apresentação prévia, em sala de aula para o professor.✅
 _Adriane e Neiva_
-	⚫ Exibir e apresentar o projeto final para os ouvintes.
+	⚫ Exibir e apresentar o projeto final para o público na apresentação final.
+	⚫ Criar QR Code para direcioanr ao site no final da apresentação ao público✅
 _Miguel, Daniel e Marcos_
 	⚫ Esclarecer dúvidas técnicas do desenvolvimento, tecnologias e recursos.
 	
