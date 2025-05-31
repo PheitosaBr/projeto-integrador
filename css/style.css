@@ -48,7 +48,7 @@
     margin-top: 0 !important;
     width: 100%;
     height: 1rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(234, 88, 12, 1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -57,7 +57,7 @@
     margin-top: 0 !important;
     width: 100%;
     height: 2rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(234, 88, 12, 1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -66,7 +66,7 @@
     margin-top: 0 !important;
     width: 100%;
     height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(234, 88, 12, 1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -75,7 +75,7 @@
     margin-top: 0 !important;
     width: 100%;
     height: 4rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgb(234, 88, 12, 1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
@@ -92,46 +92,36 @@
     fill: currentColor;
   }
 
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-  }
-
-  .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
+  /*Botão para mudar o tema do site*/
+  .btn-change-theme {
+    --bs-orange: #ca6510;
+    --bd-orange-rgb: 249, 140, 44;
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-bg: var(--bs-orange);
+    --bs-btn-border-color: var(--bs-white-border-subtle);
     --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-hover-bg: #fd9843;
+    --bs-btn-hover-border-color: var(--bs-white-border-subtle);
+    --bs-btn-focus-shadow-rgb: var(--bd-orange-rgb);
     --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
+    --bs-btn-active-bg: #feb272;
+    --bs-btn-active-border-color: #feb272;    
+    border-width: 1px !important;
+    border-style: solid !important;    
+    width: 60px !important;
+    position: relative !important;
+    left: auto !important;
+    right: 0 !important;   
   }
 
   .bd-mode-toggle {
-    z-index: 1500;
+    z-index: 2000;  
+    margin-bottom: 0;
+    box-sizing: border-box;
   }
 
-  .bd-mode-toggle .dropdown-menu .active .bi {
+  .bd-mode-toggle .dropdown-menu-theme .active .bi {
     display: block !important;
   }
 
@@ -216,10 +206,15 @@
     height: 75% !important;
   }
 
-.b-verde-destaque {
+  .text-bg-orange {
+  color: #fff !important;
+  background-color: RGBA(234, 88, 12, 1) !important;
+  }
+
+.b-orange-destaque {
   display: inline-block;
   padding: 10px 25px;
-  background-color: #45a049;
+  background-color: #ca6510;
   color: white;
   text-decoration: none;
   font-size: 1em;
@@ -228,18 +223,42 @@
   margin-top: 20px;
 }
 
-.b-verde-destaque:hover {  
-  background-color: #4CAF50;
+.b-orange-destaque:hover {  
+  background-color: #fd9843;
   
 }
-.nav-link-div:hover, .nav-link-div:focus{  
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}  
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-link-div {  
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/*.nav-link-div:hover, .nav-link-div:focus{  
   background-color: rgba(0, 0, 0, .4);  
 }
 .nav-link-div:focus-visible {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
+}*/
+
 .carousel-control:hover {
   background-color: rgba(0, 0, 0, .2);
-
 }

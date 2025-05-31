@@ -10,14 +10,24 @@
 *      HTML5
 *      CSS3
 *      JavaScript (ES6+)
-*      Bootstrap 5.0
+
+## Frameworks
+
+*     BootStrap 5.3  
+
+## Ferramentas
+
+*      Typebot
+*      API Revolution
+*      Google Sheets
+  
 
 ## Equipe:
 
 *      Adriane
-*      Daniel
-*      Marcos Paulo
-*      Miguel
+*      Flávio Daniel de Lima Viana
+*      Marcos Paulo Feitosa Souza
+*      Pedro Miguel Moreira da Costa 
 *      Neiva
 
 ## Site:

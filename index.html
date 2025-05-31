@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Control Money - Projeto Integrador">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-        <meta name="generator" content="Adriana, Daniel, Marcos Paulo, Miguel e Neiva">
+        <meta name="generator" content="Adriane, Daniel, Marcos Paulo, Miguel e Neiva">
 
         <title>Control Money - Projeto Integrador</title>
 
         <!--<link href="css/cdn-jsdelivr.css" rel="stylesheet">-->
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-color.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>        
@@ -64,104 +65,91 @@
         </symbol> 
       </svg><!--Fim Links para ícones e símbolos-->
       
-          <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"><!--Botão para mudar tema claro ou escuro-->
-            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-                    id="bd-theme"
-                    type="button"
-                    aria-expanded="false"
-                    data-bs-toggle="dropdown"
-                    aria-label="Toggle theme (auto)">
-              <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-              <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-                  Light
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-                  Dark
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-                  Auto
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-            </ul>
-          </div><!--Fim Botão para mudar tema claro ou escuro-->
-        <header class="hideen"><!--O Header está escondido, sem uso-->
+        <!--O Header está escondido, sem uso--> 
+        <header class="hideen">
         </header><!--O Header está escondido, sem uso-->
 
-          <nav class="navbar navbar-expand-md bg-dark sticky-top m-0 d-flex p-0 h-75" data-bs-theme="dark"><!--Conteúdo visível do site-->
-            <div class="container">
-              <a class="navbar-brand d-md-none " width="45" height="45" href="index.html"><!--MENU escondido em telas menores-->
-                <svg class="bi rounded-circle bg-white" width="45" height="45" aria-hidden="true">
-                  <image xlink:href="midia/img/logo/logo_3_sem_fundo.png" width="45" height="45" alt="ícone da empresa"></image>
-                  <!--<use xlink:href="#aperture" alt="ícone da empresa">
-                    #shadow-root (closed)
-                    <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                      <circle cx="12" cy="12" r="10"></circle> 
-                      <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                    </symbol>
-                  </use>-->
-                </svg>
+          <!-- Início da barra de navegação -->
+          <nav class="navbar navbar-expand-lg bd-orange-600 sticky-top " data-bs-theme="dark">
+            <div class="container container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="midia/img/logo/logo_3_sem_fundo.png" width="60" height="60" alt="ícone da empresa"></img>                
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"><!--Botão para chamar o menu offcanvas-->
-                <span class="navbar-toggler-icon"></span>
+              <!--Início MENU escondido offcanvas para telas menores-->
+              <button class="navbar-toggler shadow " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"><!--Botão para chamar o menu escondido offcanvas-->
+                <span class="navbar-toggler-icon"></span><!--Botão "sanduiche" "tres linhas"-->
               </button>
-              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvasLabel"><!--MENU escondido offcanvas em telas menores-->
-                <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel"></h5> 
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-                </div>                
-                <div class="offcanvas-body row "><!--MENU em telas maiores-->
-                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between px-3 py-3"> 
-                    <div class="nav-link-div px-2 py-4 pt-2 rounded-3"><li class="nav-item "><a class="nav-link" href="index.html" aria-label="Aperture"> 
-                      <svg class="bi rounded-circle bg-white " width="45" height="45" aria-hidden="true">
-                        <image class="mt-n5 py-n5" xlink:href="midia/img/logo/logo_3_sem_fundo.png" width="45" height="45" alt="ícone da empresa"></image>
-                          <!--<use xlink:href="#aperture">
-                            #shadow-root (closed)
-                            <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                              <circle cx="12" cy="12" r="10"></circle> 
-                              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                            </symbol>
-                          </use>-->
+              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvas-Navbar-Label">
+                <div class="offcanvas-header bd-orange-600 text-center shadow ">
+                  <a class="col" href="index.html"><img src="midia/img/logo/logo_3_sem_fundo.png" width="45" height="45" alt="ícone da empresa"></img></a> 
+                  <h5 class="offcanvas-title col-6" id="offcanvas-Navbar-Label">Control Money</h5>                   
+                  <button type="button" class="btn-close col " data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                </div>                               
+                <div class="offcanvas-body">
+                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between pe-3">
+                    <h1 class="h5 text-start d-none d-md-block"><strong>Control Money</strong></h1>
+                    <div class=""><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link text-out">Recursos</a></li></div>                    
+                    <div class=""><li class="nav-item"><a href="#sobre_nos" class="nav-link ">Sobre nós</a></li></div>
+                    <div class=""><li class="nav-item"><a href="#FAQs" class="nav-link">FAQs</a></li></div>
+                    <div class="">  
+                      <li class="nav-item"> 
+                        <a class="nav-link " href="#" onclick="carregarModal('checkout')" aria-label="Cart"> 
+                          <svg class="bi" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#cart">
+                              #shadow-root (closed)
+                              <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
+                            </use>
                           </svg> 
                         </a>
                       </li>
                     </div>
-                    <h1 class="h5 "><strong>Control Money</strong></h1>
-                    <div class="nav-link-div px-2 py-3 rounded-3 text-decoration-none"><li class="nav-item text-decoration-none"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#sobre_nos" class="nav-link">Sobre nós</a></li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#FAQs" class="nav-link">FAQs</a></li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="#cart">
-                            #shadow-root (closed)
-                            <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
-                          </use>
-                        </svg> 
-                      </a>
-                    </li></div> 
+                    <!--Início Botão para mudar tema claro ou escuro-->
+                    <div class="dropdown-center bd-mode-toggle shadow ">                      
+                        <button class="btn btn-change-theme dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-display="static" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"> 
+                            <use href="#circle-half"></use> 
+                          </svg>
+                          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" data-popper-placement="top-end" aria-labelledby="bd-theme-text">
+                          <li>
+                            <button type="button" class="dropdown-item " data-bs-theme-value="light" aria-pressed="false">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                              Claro
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item " data-bs-theme-value="dark" aria-pressed="false">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                              Escuro
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item  active" data-bs-theme-value="auto" aria-pressed="true">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                              Auto
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                        </ul>                      
+                    </div>
+                    <!--Fim Botão para mudar tema claro ou escuro--> 
                   </ul> 
                 </div>
-              </div><!--Fim MENU offcanvas escondido para tela menores-->                 
+              </div>                
             </div>
+            <!--Fim MENU offcanvas escondido para tela menores--> 
           </nav>
-        <div class="b-example-divider-1"></div><!--Barra de divisão-->      
+          <!--Fim da barra de navegação -->
+
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+
         <main>
-          <!--Conteúdo dos recursos estático-->
-          <section id="conteudo_recursos" class="pt-1">
-            <div class="container col-xxl-8 mt-5 px-4 py-5"><!--Conteúdo do recurso estático 1-->
+          <!--Conteúdo dos recursos estáticos-->
+          <section id="conteudo_recursos" class="mb-1 pt-1 p-2">
+            <div class="container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-5 shadow "><!--Conteúdo do recurso estático 1-->
               <div class="row flex-lg-row-reverse align-items-center g- py-1">             
                 <div class="col-10 col-sm-8 col-lg-6">
                   <img src="midia/img/1x1/Exemplo_app_1x1_3.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
@@ -171,11 +159,11 @@
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
                   <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p>
-                  <a href="#" onclick="carregarModal('saiba-mais-1')" class="btn b-verde-destaque">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
+                  <a href="#" onclick="carregarModal('saiba-mais-1')" class="btn b-orange-destaque shadow ">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
                 </div>
               </div>
             </div><!-- Fim Conteúdo do recurso estático 1-->
-            <div class="container col-xxl-8 px-4 py-5"><!--Conteúdo do recurso estático 2-->
+            <div class="container-fluid border col-xxl-8 px-4 py-5 shadow "><!--Conteúdo do recurso estático 2-->
               <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
                 <div class="col-lg-6">                  
                   <h2>Transforme sua gestão financeira com o Typebot</h2>
@@ -188,7 +176,7 @@
                   </ul>
                   <div class="call-to-action">
                     <p><strong>Comece agora com 7 dias grátis.</strong></p>
-                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="btn b-verde-destaque">Saiba Mais</a>
+                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="btn b-orange-destaque shadow ">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -199,13 +187,13 @@
           <!--Conteúdo dos Modais-->
           <div id="modalContainer"></div>
           <!--Fim Conteúdo dos Modais-->
-          <!--Fim Conteúdo dos recursos estático-->
+          <!--Fim Conteúdo dos recursos estáticos -->
 
-          <div class="b-example-divider-1"></div><!--Barra de divisão-->
+          <div class="b-example-divider-2"></div><!--Barra de divisão-->
           
           <!--Conteúdo dos recursos Coarrossel-->
           <section id="carrossel_recursos"><!--Conteúdo dos recursos Coarrossel-->
-            <div class="container">
+            <div class="container-fluid">
               <div id="myCarouselAutoplaying" class="carousel slide col" data-bs-ride="carousel"> 
                 <div class="carousel-indicators"> 
                   <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -250,14 +238,15 @@
                   <span class="visually-hidden">Next</span> 
                 </button>
               </div>
-            </div>
-            
-          </section><!--Fim Conteúdo dos recursos Coarrossel-->
-        </main><!--Fim Conteúdo do site-->
+            </div>            
+          </section>
+          <!--Fim Conteúdo dos recursos Coarrossel-->
+        </main>
 
-        <div class="b-example-divider-1"></div><!--Barra de divisão-->
-
-        <div id="FAQs" class="container mt-4"><!--Conteúdo das FAQs-->
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+        
+        <!--Conteúdo das FAQs-->
+        <div id="FAQs" class="container mt-4">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -289,11 +278,33 @@
                 <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  PERGUNTA FREQUENTE Nº 4
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  PERGUNTA FREQUENTE Nº 5
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+              </div>
+            </div>
           </div>
-        </div><!-- Fim Conteúdo das FAQs -->
+        </div>
+        <!-- Fim Conteúdo das FAQs -->
 
-        <div class="b-example-divider-1"></div><!--Barra de divisão-->
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
 
+        <!-- Início Conteúdo Quem somos / sobre Nós -->
         <section id="sobre_nos" class="container mt-4"><!--Conteúdo Sobre nós-->
           <div class="row flex-lg-row-reverse">
             <div class="col-lg-6">
@@ -305,8 +316,9 @@
             </div>
           </div>
         </section>
+        <!-- Fim Conteúdo Quem somos / sobre Nós -->
 
-        <div class="b-example-divider-1"></div><!--Barra de divisão-->
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
 
         <!--Começo do Rodapé-->
         <div class="container h-100 d-inline">
