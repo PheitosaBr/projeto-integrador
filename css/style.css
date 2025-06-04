@@ -12,6 +12,11 @@
   .flex-equal > * {
   flex: 1;
   }
+  body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
 
   .form-control-dark {
   border-color: var(--bs-gray);
@@ -262,4 +267,14 @@
 
 .carousel-control:hover {
   background-color: rgba(0, 0, 0, .2);
+}
+
+[data-theme="dark"] .carousel-button {
+    background-color: #fff; /* Cor no tema escuro */
+    color: #000;
+}
+
+[data-theme="light"] .carousel-button {
+    background-color: #000; /* Cor no tema claro */
+    color: #fff;
 }
