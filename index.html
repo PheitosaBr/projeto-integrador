@@ -13,6 +13,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap-color.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="carousel.css" rel="stylesheet">
     </head>
     <body>
       <!--Links para ícones e Símbolos-->        
@@ -145,21 +146,20 @@
           </nav>
           <!--Fim da barra de navegação -->
 
-        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+        <div class="b-example-divider2"><!--</div>Barra de divisão-->
 
+        <main>
           <!--Conteúdo dos recursos Coarrossel-->
-          <section id="carrossel_recursos" class="mb-1 pt-1 p-2"><!--Conteúdo dos recursos Coarrossel-->
-            <div class=" container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-5 shadow">
-              <div id="myCarouselAutoplaying" class="carousel slide col" data-bs-ride="carousel"> 
+          <section id="carrossel_recursos" class="text-center mt-2"><!--Conteúdo dos recursos Coarrossel-->            
+              <div id="myCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
                 <div class="carousel-indicators"> 
                   <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div> 
-                <div class="carousel-inner text-center">
+                <div class="carousel-inner">
                   <div id="0" class="carousel-item active">
-                    <img class=" w-75" src="midia/img/carrosel/Exemplo_app_16x9_1.png" alt="imagem do produto"> 
-                    <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
+                    <img class="bd-placeholder-img w-100" height="80%" width="100%" src="midia/img/carrosel/Exemplo_app_16x9_1.jpg" alt="imagem do produto">                    
                     <div class="carousel-caption d-none d-md-block">                    
                       <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Comece agora com 7 dias grátis</h1> 
                       <p class="opacity-75 text-bg-warning rounded-3 p-1">Clieque aqui para solicitar o seu<p> 
@@ -167,8 +167,7 @@
                     </div> 
                   </div>
                   <div id="1" class="carousel-item">                        
-                    <img class="w-75" src="midia/img/carrosel/Exemplo_app_16x9_2.png" alt="imagem do produto">  
-                    <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container">  -->                  
+                    <img class="bd-placeholder-img w-100" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_2.jpg" alt="imagem do produto">             
                     <div class="carousel-caption d-none d-md-block">  
                       <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Outro exemplo de título.</h1> 
                       <p class="opacity-75 text-bg-light rounded-3 p-1">Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
@@ -176,7 +175,7 @@
                     </div>
                   </div>
                   <div id="2" class="carousel-item">
-                    <img class=" w-75" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
+                    <img  class="bd-placeholder-img w-100" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
                     <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->                  
                     <div class="carousel-caption d-none d-md-block">  
                       <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Mais uma para garantir.</h1> 
@@ -185,19 +184,17 @@
                     </div>                   
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="prev"> 
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
-                  <span class="visually-hidden">Previous</span> 
+                <button class="carousel-control-prev p-4" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="prev"> 
+                  <span class="carousel-control-prev-icon rounded-5 shadow  p-4 " aria-hidden="true"></span> 
+                  <span class="visually-hidden">Anterior</span> 
                 </button> 
                 <button class="carousel-control-next" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="next"> 
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                  <span class="visually-hidden">Next</span> 
+                  <span class="carousel-control-next-icon rounded-5 shadow  p-4" aria-hidden="true"></span> 
+                  <span class="visually-hidden">Póximo</span> 
                 </button>
-              </div>
-            </div>            
+              </div>                        
           </section>
           <!--Fim Conteúdo dos recursos Coarrossel-->
-        <main>
           <!--Conteúdo dos recursos estáticos-->
           <section id="conteudo_recursos" class="mb-1 pt-1 p-2">
             <div class="container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-5 shadow "><!--Conteúdo do recurso estático 1-->
@@ -239,10 +236,6 @@
           <div id="modalContainer"></div>
           <!--Fim Conteúdo dos Modais-->
           <!--Fim Conteúdo dos recursos estáticos -->
-
-          <div class="b-example-divider-2"></div><!--Barra de divisão-->
-          
-
         </main>
 
         <div class="b-example-divider-2"></div><!--Barra de divisão-->
@@ -338,9 +331,8 @@
                 <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-body-secondary">FAQs</a></li>
               </ul> 
             </footer>
-          </div><!--Fim do Rodapé--> 
-        <div class="b-example-divider-4"></div><!--Barra de divisão-->
-        
+          </div><!--Fim do Rodapé-->
+
         <!--Scripts-->
         <script src="js/color-modes.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
