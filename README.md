@@ -29,6 +29,10 @@
 *      Pedro Miguel Moreira da Costa 
 *      Neiva
 
+# Site:
+
+*     https://pheitosabr.github.io/projeto-integrador/
+
 ## Desenvolvedores Frontend:
 
 _Miguel e Neiva_
@@ -56,10 +60,6 @@ _Daniel_
 _TODOS_
 
 	⚫ Testar e otimizar o desempenho do site e produto até a conclusaão final.
-
-# Site:
-
-*   https://pheitosabr.github.io/projeto-integrador/
 
 # Organograma e Tarefas:
 
