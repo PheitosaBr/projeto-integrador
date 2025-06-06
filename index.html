@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="pt-br" data-bs-theme="auto">
     <head>
-        <script src="js/color-modes.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Control Money - Projeto Integrador">
+        <meta name="description" content="Money Control - Projeto Integrador">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-        <meta name="generator" content="Adriana, Daniel, Marcos Paulo, Miguel e Neiva">
+        <meta name="generator" content="Adriane, Daniel, Marcos Paulo, Miguel">
 
-        <title>Control! Money - Projeto Integrador</title>
+        <title>Money Control | Projeto Integrador</title>
 
         <!--<link href="css/cdn-jsdelivr.css" rel="stylesheet">-->
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-color.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        
     </head>
-    <body>        
+    <body>
+      <!--Links para ícones e Símbolos-->        
       <svg xmlns="http://www.w3.org/2000/svg" class="d-none"><!--Links para ícones e símbolos-->
           <symbol id="check2" viewBox="0 0 16 16">
             <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -65,245 +67,276 @@
         </symbol> 
       </svg><!--Fim Links para ícones e símbolos-->
       
-          <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"><!--Botão para mudar tema claro ou escuro-->
-            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-                    id="bd-theme"
-                    type="button"
-                    aria-expanded="false"
-                    data-bs-toggle="dropdown"
-                    aria-label="Toggle theme (auto)">
-              <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-              <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-                  Light
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-                  Dark
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                  <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-                  Auto
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-            </ul>
-          </div><!--Fim Botão para mudar tema claro ou escuro-->
-        <header class="hideen"><!--O Header está escondido, sem uso-->
-        </header><!--O Header está escondido, sem uso-->
+        <!--O Header está escondido, sem uso--> 
+        <header class="hideen">
+        </header><!--O Header está escondido, sem usooo-->
 
-          <nav class="navbar navbar-expand-md bg-dark sticky-top m-0 d-flex p-0 h-75" data-bs-theme="dark"><!--Conteúdo visível do site-->
-            <div class="container">
-              <a class="navbar-brand d-md-none" href="#">
-                <svg class="bi rounded-circle" width="34" height="34" aria-hidden="true">
-                  <image xlink:href="midia/img/robo_money.png" width="34" height="34" alt="ícone da empresa"></image>
-                  <!--<use xlink:href="#aperture" alt="ícone da empresa">
-                    #shadow-root (closed)
-                    <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                      <circle cx="12" cy="12" r="10"></circle> 
-                      <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                    </symbol>
-                  </use>-->
-                </svg> Control Money
+          <!-- Início da barra de navegação -->
+          <nav class="navbar navbar-expand-lg bd-orange-600 sticky-top shadow" data-bs-theme="dark">
+            <div class="container container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="midia/img/logo/logo_nova.png" width="60" height="60" alt="ícone da empresa"></img>                
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <!--Início MENU escondido offcanvas para telas menores-->
+              <button class="navbar-toggler shadow " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"><!--Botão para chamar o menu escondido offcanvas-->
+                <span class="navbar-toggler-icon"></span><!--Botão "sanduiche" "tres linhas"-->
               </button>
-              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvasLabel">
-                <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Control Money</h5> 
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-                </div>                
-                <div class="offcanvas-body "> 
-                  <ul class="navbar-nav flex-grow-1 justify-content-between px-3 py-3"> 
-                    <div class="nav-link-div px-3 py-3 rounded-3" width="24" height="24"><li class="nav-item"><a class="nav-link " href="index.html" aria-label="Aperture"> 
-                        <svg class="bi rounded-circle" width="24" height="24" aria-hidden="true">
-                          <image xlink:href="midia/img/robo_money.png" width="24" height="24" alt="ícone da empresa"></image>
-                          <!--<use xlink:href="#aperture">
-                            #shadow-root (closed)
-                            <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                              <circle cx="12" cy="12" r="10"></circle> 
-                              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                            </symbol>
-                          </use>-->
-                        </svg> 
-                      </a>
-                    </li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a href="#" class="nav-link">FAQs</a></li></div>
-                    <div class="nav-link-div px-3 py-3 rounded-3"><li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="#cart">
-                            #shadow-root (closed)
-                            <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
-                          </use>
-                        </svg> 
-                      </a>
-                    </li></div> 
+              <div id="offcanvas" class="offcanvas offcanvas-end" aria-labelledby="offcanvas-Navbar-Label">
+                <div class="offcanvas-header bd-orange-600 text-center shadow ">
+                  <a class="col" href="index.html"><img src="midia/img/logo/logo_nova.png" width="45" height="45" alt="ícone da empresa"></img></a> 
+                  <h5 class="offcanvas-title col-6" id="offcanvas-Navbar-Label">Money Control</h5>                   
+                  <button type="button" class="btn-close col " data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                </div>                               
+                <div class="offcanvas-body ">
+                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between shadow rounded-3 p-2">
+                    <h1 class="h5 text-start d-none d-md-block"><strong>Money Control</strong></h1>
+                    <div class=""><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
+                    <div class=""><li class="nav-item"><a href="#sobre_nos" class="nav-link ">Sobre nós</a></li></div>
+                    <div class=""><li class="nav-item"><a href="#FAQs" class="nav-link">FAQs</a></li></div>
+                    <div class="">  
+                      <li class="nav-item"> 
+                        <a class="nav-link pt-3" href="#" onclick="carregarModal('checkout')" aria-label="Cart"> 
+                          <svg class="bi" width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#cart">
+                              #shadow-root (closed)
+                              <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
+                            </use>
+                          </svg> 
+                        </a>
+                      </li>
+                    </div>
+                    <!--Início Botão para mudar tema claro ou Escuro-->
+                    <div class="dropdown-center bd-mode-toggle shadow ">                      
+                        <button class="btn btn-change-theme dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-display="static" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"> 
+                            <use href="#circle-half"></use> 
+                          </svg>
+                          <span class="visually-hidden" id="bd-theme-text">Mudar Tema</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" data-popper-placement="top-end" aria-labelledby="bd-theme-text">
+                          <li>
+                            <button type="button" class="dropdown-item " data-bs-theme-value="light" aria-pressed="false">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                              Claro
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item " data-bs-theme-value="dark" aria-pressed="false">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                              Escuro
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                          <li>
+                            <button type="button" class="dropdown-item  active" data-bs-theme-value="auto" aria-pressed="true">
+                              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                              Auto
+                              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                            </button>
+                          </li>
+                        </ul>                      
+                    </div>
+                    <!--Fim Botão para mudar tema claro ou escuro--> 
                   </ul> 
                 </div>
-              </div>
-              <div id="offcanvas" class="offcanvas offcanvas-end visually-hidden" aria-labelledby="offcanvasLabel">
-                <div class="offcanvas-header"> 
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Control Money</h5> 
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-                </div>                
-                <div class="offcanvas-body"> 
-                  <ul class="navbar-nav flex-grow-1 justify-content-between"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Aperture"> 
-                        <svg class="bi rounded-circle" width="24" height="24" aria-hidden="true">
-                          <image xlink:href="midia/img/robo_money.png" width="24" height="24" alt="ícone da empresa"></image>
-                          <!-- <use xlink:href="#aperture">
-                            #shadow-root (closed)
-                            <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"> 
-                              <circle cx="12" cy="12" r="10"></circle> 
-                              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path> 
-                            </symbol>
-                          </use> -->
-                        </svg> 
-                      </a>
-                    </li>                    
-                    <li class="nav-item-offcanvas"><a href="#conteudo_recursos" class="nav-link-offcanvas">Recursos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" aria-label="Cart"> 
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
-                          <use xlink:href="#cart">
-                            #shadow-root (closed)
-                            <symbol id="cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path> </symbol>
-                          </use>
-                        </svg> 
-                      </a>
-                    </li> 
-                  </ul> 
-                </div>
-              </div>                  
+              </div>                
             </div>
+            <!--Fim MENU offcanvas escondido para tela menores--> 
           </nav>
-        <div class="b-example-divider-1"></div>      
+          <!--Fim da barra de navegação -->
+
+        <div class="b-example-divider1"><!--</div>Barra de divisão-->
+
         <main>
-          <!--Conteúdo do site AQUI-->
-          <section id="conteudo_recursos" class="pt-1">
-            <div class="container col-xxl-8 mt-5 px-4 py-5">
+          <!--Conteúdo dos recursos Coarrossel-->
+          <section id="carrossel_recursos" class="text-center mt-2"><!--Conteúdo dos recursos Coarrossel-->            
+              <div id="myCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
+                <div class="carousel-indicators"> 
+                  <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div> 
+                <div class="carousel-inner">
+                  <div id="0" class="carousel-item active">
+                    <img class="bd-placeholder-img img-fluid" height="80%" src="midia/img/carrosel/ChatGPT Image 6 de jun. de 2025, 13_42_28.png" alt="imagem do produto">                    
+                    <div class="carousel-caption d-none d-md-block">                    
+                      <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Comece agora com 7 dias grátis!</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-warning rounded-3 p-1" >Clique aqui!<p></a>
+                      <!-- <p><a class="b-verde-destaque btn-lg" href="#">Inscreva-se hoje</a></p>-->                     
+                    </div> 
+                  </div>
+                  <div id="1" class="carousel-item">                        
+                    <img class="bd-placeholder-img img-fluid" height="50%" src="midia/img/carrosel/Exemplo_app_16x9_2.jpg" alt="imagem do produto">             
+                    <div class="carousel-caption d-none d-md-block">  
+                      <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Com controle financeiro você elimina desperdícios</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-light rounded-3 p-1" onclick="carregarModal('checkout')" aria-label="Cart">Clique aqui!<p></a> 
+                      <!-- <p><a class="b-verde-destaque btn-lg" href="#">Leia mais</a></p>-->                    
+                    </div>
+                  </div>
+                  <div id="2" class="carousel-item">
+                    <img  class="bd-placeholder-img img-fluid" height="50%" src="midia/img/carrosel/grafico_positivo.jpg" alt="imagem do produto">  
+                    <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->                  
+                    <div class="carousel-caption d-none d-md-block">  
+                      <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Direcione seu dinheiro para investimentos!</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"></a><p class="opacity-75 text-bg-primary rounded-3 p-2 mb-0">Clique aqui!</p></a> 
+                      <!-- <p><a class="b-verde-destaque btn-lg" href="#">Função</a></p>-->
+                    </div>                   
+                  </div>
+                </div>
+                <button class="carousel-control-prev p-4" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="prev"> 
+                  <span class="carousel-control-prev-icon rounded-5 shadow  p-4 " aria-hidden="true"></span> 
+                  <span class="visually-hidden">Anterior</span> 
+                </button> 
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="next"> 
+                  <span class="carousel-control-next-icon rounded-5 shadow  p-4" aria-hidden="true"></span> 
+                  <span class="visually-hidden">Póximo</span> 
+                </button>
+              </div>                        
+          </section>
+          <!--Fim Conteúdo dos recursos Coarrossel-->
+
+          <!--Conteúdo dos recursos estáticos-->
+          <section id="conteudo_recursos" class="mb-1 pt-1 p-2">
+            <div class="container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-5 shadow "><!--Conteúdo do recurso estático 1-->
               <div class="row flex-lg-row-reverse align-items-center g- py-1">             
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <img src="midia/img/1x1/Exemplo_app_1x1_3.jpeg" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
                   <!--Imagem do produto-->
                 </div>
                 <div class="col-lg-6">                  
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
-                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p><a href="#" class="b-verde-destaque">Comece agora</a>                    
+                  <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p>
+                  <a href="javascript:void(0);" onclick="carregarModal('saiba-mais-1')" class="btn b-orange-destaque shadow ">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
                 </div>
               </div>
-            </div>
-            <div class="container col-xxl-8 px-4 py-5">
+            </div><!-- Fim Conteúdo do recurso estático 1-->
+            <div class="container-fluid border col-xxl-8 px-4 py-5 shadow "><!--Conteúdo do recurso estático 2-->
               <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
                 <div class="col-lg-6">                  
                   <h2>Transforme sua gestão financeira com o Typebot</h2>
                   <p class="destaque">Chega de planilhas complicadas. O Typebot te entrega respostas, alertas e decisões inteligentes — tudo em um só lugar.</p>
                   <ul class="beneficios">
-                    <li><strong>💬 Interface Conversacional:</strong> fale com seus dados como se estivesse no WhatsApp.</li>
-                    <li><strong>📊 Análises Automatizadas:</strong> entenda para onde vai seu dinheiro sem esforço.</li>
-                    <li><strong>⚡ Respostas em Tempo Real:</strong> receba alertas sobre oportunidades e riscos.</li>
-                    <li><strong>🔒 Segurança Total:</strong> seus dados protegidos com criptografia de ponta.</li>
+                    <li><strong>💬 Interface Conversacional:</strong></li>
+                    <li><strong>📊 Análises Automatizadas:</strong></li>
+                    <li><strong>⚡ Respostas em Tempo Real:</strong></li>
+                    <li><strong>🔒 Segurança Total:</strong></li>
                   </ul>
                   <div class="call-to-action">
-                    <p><strong>Comece agora com 7 dias grátis.</strong></p>
-                    <a href="#" class="b-verde-destaque">Quero experimentar</a>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="carregarModal('saiba-mais-2')" class="btn b-orange-destaque shadow ">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="exemplo-typebot.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
-                  <!--Imagem do produto-->
+                  <img src="midia/img/1x1/Imagem do texto.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy"><!--Imagem do produto-->
                 </div>
-            </div>
-          </section id="carrossel_recursos">
-          <div class="b-example-divider-1"></div>
-          <section class="">
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel"> 
-              <div class="carousel-indicators"> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button> 
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button> 
-              </div> 
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="midia/img/chatbot_gerenciador1.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto"> 
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
-                  <div class="container"> 
-                    <div class="carousel-caption text-start"> 
-                      <h1 class="text-warning">Exemplo de título.</h1> 
-                      <p class="opacity-75">Algum conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Sign up today</a></p> 
-                    </div> 
-                  </div> 
-                </div>
-                <div class="carousel-item">                        
-                  <img src="midia/img/chatbot_gerenciador2.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto">  
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container">  -->
-                  <div class="container">
-                    <div class="carousel-caption"> 
-                      <h1 class="text-danger">Outro exemplo de título.</h1> 
-                      <p>Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Learn more</a></p> 
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="midia/img/chatbot_gerenciador3.png" width="50%" class="img-fluid rounded mx-auto d-block" alt="imagem do produto">  
-                  <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->
-                  <div class="container"> 
-                    <div class="carousel-caption text-end"> 
-                      <h1>Mais uma para garantir.</h1> 
-                      <p>Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
-                      <p><a class="b-verde-destaque btn-lg" href="#">Browse gallery</a></p> 
-                    </div> 
-                  </div> 
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> 
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
-                <span class="visually-hidden">Previous</span> 
-              </button> 
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> 
-                <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                <span class="visually-hidden">Next</span> 
-              </button>
-            </div>
-          </section>          
+            </div><!-- Fim Conteúdo do recurso estático 2-->
+          </section>
+          <!--Conteúdo dos Modais-->
+          <div id="modalContainer"></div>
+          <!--Fim Conteúdo dos Modais-->
+          <!--Fim Conteúdo dos recursos estáticos -->
+        </main>
 
-        </main><!--Fim Conteúdo do site-->
-        <div class="b-example-divider-1"></div>
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+        
+        <!--Conteúdo das FAQs-->
+        <div id="FAQs" class="container mt-4">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Como faço para criar uma conta?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Após comprar o Money Control você terá <code>"acesso"</code> ao cadastro e basta seguir as instruções. Será necessário fornecer seu login e criar uma senha segura.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Como o Money Control pode me ajudar a gerenciar minhas finanças?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">O Money Control usa inteligência artificial para rastrear seus gastos, sugerir ajustes no orçamento e oferecer insights sobre como <code> melhorar sua saúde financeira.</code> Basta conversar com o chatbot para obter relatórios e dicas personalizadas.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  O Money Control é seguro para armazenar meus dados financeiros?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Sim! O sistema utiliza uma <code>planilha do google sheet</code> dentro da sua própria conta da google, isso garante que seus dados financeiros estejam sempre seguros. Além disso, você pode configurar autenticação em dois fatores para mais segurança.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Como faço para criar categorias de despesas e receitas?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Você não precisa criar categoria! basta dizer ao chatbot qual despesa deseja adicionar, que a inteligência artificial ira <code>categorizar de forma automatica</code> como "Alimentação", "Transporte" ou "Saúde" e muito mais, e ele organizará seus gastos automaticamente.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  O Money Control me ajuda a economizar dinheiro?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Sim! Ele ajuda a organizar suas <code></code>receitas e despesas.</code> Isso lhe ajuda a pensar no futuro com mais planejamento e sem gastos desnecessários.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Conteúdo das FAQs -->
+
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+
+        <!-- Início Conteúdo Quem somos / sobre Nós -->
+        <section id="sobre_nos" class="container mt-4"><!--Conteúdo Sobre nós-->
+          <div class="row flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <img src="" class="d-block mx-lg-auto img-fluid border border-secondary rounded shadow-sm p-3 mb-5 bg-body-tertiary" alt="Foto da equipe" width="600" height="400" loading="lazy"><!--Foto da equipe-->
+            </div>
+            <div class="col-lg-6">
+              <h3 class="h1">Quem somos</h3>
+              <p>Nossa equipe conta com 4 programadores que se conheceram no curso de formação do SENAC. Somos profissionais de diversas áreas que já tinham em sua história o interesse em comum em trabalhar com tecnologia da informação. Com o propósito de desenvolver sites, sistemas ou aplicativos, corrigir erros e otimizar sistemas, sempre com foco na necessidade real do cliente e alta qualidade em atendimento.</p>
+            </div>
+          </div>
+        </section>
+        <!-- Fim Conteúdo Quem somos / sobre Nós -->
+
+        <div class="b-example-divider-2"></div><!--Barra de divisão-->
+
         <!--Começo do Rodapé-->
         <div class="container h-100 d-inline">
             <footer class="container d-flex flex-wrap justify-content-between align-items-center">
-              <p class="col-md-5 mb-0 text-body-secondary">© 2025 Control Money, SA</p> 
+              <p class="col-md-5 mb-0 text-body-secondary">© 2025 Money Control , SA</p> 
               <a href="/" class="col-md-2 d-flex align-items-center justify-content-center" aria-label="Logo da empresa"> 
                 <svg class="bi rounded-circle" width="55" height="55" aria-hidden="true">
-                  <image xlink:href="midia/img/robo_money.png" width="55" height="55" alt="logo da empresa"></image>
+                  <image xlink:href="midia/img/logo/Seta laranja.png" width="55" height="55" alt="logo da empresa"></image>
                 </svg> 
               </a> 
               <ul class="nav col-md-5 justify-content-end"> 
                 <!-- <li class="nav-item"><a href="#topo" class="nav-link px-2 text-body-secondary">Topo</a></li> -->
                 <li class="nav-item"><a href="#conteudo_recursos" class="nav-link px-2 text-body-secondary">Recursos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
+                <li class="nav-item"><a href="#sobre_nos" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
+                <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-body-secondary">FAQs</a></li>
               </ul> 
             </footer>
-          </div><!--Fim do Rodapé--> 
-        <div class="b-example-divider-4"></div>
-        <script src="js/bootstrap.bundle.min.js"></script> 
+          </div><!--Fim do Rodapé-->
+
+        <!--Scripts-->
+        <script src="js/color-modes.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/modais.js"></script>
     </body>
 </html>

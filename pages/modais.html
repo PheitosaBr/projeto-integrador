@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+    <head>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Modais Money Control - Projeto Integrador">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Adriane, Daniel, Marcos Paulo, Miguel e Neiva">
+
+        <title>Money Control - Projeto Integrador</title>
+
+        <!--<link href="css/cdn-jsdelivr.css" rel="stylesheet">-->
+        
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/modais.css" rel="stylesheet">
+    </head>
+    <body>
+      <!--Conteúdo do Modal 1-->
+      <div id="saiba-mais-1" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true"  aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header text-bg-orange">
+              <h5 class="modal-title">Transforme sua gestão financeira com o Typebot!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container text-center">
+                <div class="row ">
+                  <div class="col">
+                    <img src="../midia/img/1x1/Exemplo_app_1x1_9.png" class="img-fluid" alt="Imagem do recurso em ênfase" width="50%">
+                  </div>
+                  <!-- <div class="col">
+                    <img src="../midia/img/1x1/Exemplo_app_1x1_5.png" class="img-fluid" alt="Imagem do recurso em ênfase" width="80%">
+                  </div> -->
+                </div>                
+              </div>
+              <p class="mt-3" > Olá! Vou te explicar brevemente como funciona essa ferramenta excelente que vai te ajudar a administrar sua vida financeira com eficiência e praticidade. Você vai acessar as abas onde poderá em qualquer momento incluir ou modificar os dados como despesas mensais, despesas extras, sua receita, poderá consultar seu extrato mensal e tudo isso estará dispónivel 24 horas, basta apenas você mandar a informação ou solicitação através de mensagem para o nosso contato! </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Conteúdo do Modal 1 -->
+
+      <!-- Conteúdo do Modal 2 -->
+      <div id="saiba-mais-2" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header text-bg-orange">
+              <h5 class="modal-title">Descubra uma nova forma de se conectar com suas finanças!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <img src="../midia/img/1x1/Exemplo_app_1x1_10.jpeg" class="img-fluid" alt="Imagem do recurso em ênfase" width="95%">
+                  </div>
+                  <div class="col">
+                    <img src="../midia/img/1x1/Exemplo_app_1x1_11.jpeg" class="img-fluid" alt="Imagem do recurso em ênfase" width="95%">
+                  </div>
+                </div>                
+              </div>
+              <p class="mt-3" >Através dessa plataforma inteligente que transforma a forma como você entende e cuida do seu dinheiro:</p>
+              <p>💬 Interface Conversacional Converse com seus dados como se estivesse no WhatsApp. Pergunte, tire dúvidas e acompanhe seus gastos com uma linguagem simples e direta.</p>
+              <p>📊 Análises Automatizadas Entenda para onde vai seu dinheiro sem esforço. Receba insights claros sobre seus hábitos financeiros, sem precisar fazer contas.</p>
+              <p>⚡ Respostas em Tempo Real Fique por dentro de oportunidades e riscos na hora certa. Receba alertas inteligentes sempre que algo importante acontecer na sua vida financeira</p>
+              <p>🔒 Segurança Total Tenha tranquilidade: seus dados estão protegidos com criptografia de ponta. Privacidade e segurança em primeiro lugar.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Conteúdo do Modal 2 -->
+
+      <!-- Conteúdo do Modal 3 Formulário de compra-->
+      <div id="checkout" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">            
+            <div class="modal-header text-bg-orange">
+              <h5 class="modal-title">Formulário de compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body col-12">
+              <div class="container">
+                <div class="col-md-6 col-lg-12 auto">
+                  <h4 class="mb-3">Endereço de compra</h4>
+                  <form class="needs-validation" novalidate>                    
+                    <div class="row">
+                      <div class="col">
+                        <label for="firstName" class="form-label">Primeiro nome</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          É necessário um primeiro nome válido.
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label for="lastName" class="form-label">Sobrenome <span class="text-muted">(Opicional)</span></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Sobrenome válido é opcional.
+                        </div>
+                      </div>
+                    </div>                  
+                    
+                    <div class="col-12">
+                      <label for="username" class="form-label">Nome de usuário</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required>
+                      <div class="invalid-feedback">
+                          Seu nome de usuário é obrigatório.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="email" class="form-label">Email <span class="text-muted">(Opicional)</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="email@examplo.com">
+                      <div class="invalid-feedback">
+                        Insira um endereço de e-mail válido para atualizações de envio.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="address" class="form-label">Endereço</label>
+                      <input type="text" class="form-control" id="address" placeholder="Rua exemplo, 123, Bairro..." required>
+                      <div class="invalid-feedback">
+                        Por favor, insira seu endereço de pagamento.
+                      </div>
+                    </div>                    
+
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label for="country" class="form-label">País</label>
+                        <select class="form-select" id="country" required>
+                          <option value="">Escolha...</option>
+                          <option>Brasil</option>
+                          <option>Exterior</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Selecione um país válido.
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="state" class="form-label">Estado</label>
+                        <select class="form-select" id="state" required>
+                          <option value="">Escolha...</option>
+                          <option>Ceará</option>
+                          <option>Outro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Por favor, forneça um estado válido.
+                        </div>
+                      </div>
+                    </div>                    
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address">
+                      <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo que meu endereço de cobrança</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="save-info">
+                      <label class="form-check-label" for="save-info">Guarde esta informação para a próxima vez</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">Pagamento</h4>
+
+                    <div class="my-3">
+                      <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked >
+                        <label class="form-check-label" for="credit">Crédito</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">Débito</label>
+                      </div>
+                    </div>
+
+                    <div class="row gy-3">
+                      <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Número do cartão</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="1234 5678 9012 3456" required>
+                        <div class="invalid-feedback">
+                          O número do cartão de crédito é obrigatório
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-sm-6">
+                        <label for="cc-expiration" class="form-label">Validade</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" >
+                        <div class="invalid-feedback">
+                          Data de validade opicional
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-50 btn b-orange-destaque btn-lg" type="submit">Comprar</button>
+                  </form>
+                </div>               
+              </div>
+            </div>            
+            <div class="modal-footer mt-3">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                  
+            </div>
+        </div>        
+      </div>
+      <!-- Fim Conteúdo do Modal 4 -->
+
+      <!-- <script src="../js/color-modes.js"></script> -->
+      <script src="../js/bootstrap.bundle.min.js"></script> 
+      <script src="../js/modais.js"></script>
+      <!-- <script src="../js/modal.js"></script> -->
+    </body>
+
+</html>
