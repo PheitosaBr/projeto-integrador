@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Control Money - Projeto Integrador">
+        <meta name="description" content="Money Control - Projeto Integrador">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Adriane, Daniel, Marcos Paulo, Miguel">
 
@@ -13,7 +13,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap-color.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="carousel.css" rel="stylesheet">
+        
     </head>
     <body>
       <!--Links para ícones e Símbolos-->        
@@ -72,7 +72,7 @@
         </header><!--O Header está escondido, sem usooo-->
 
           <!-- Início da barra de navegação -->
-          <nav class="navbar navbar-expand-lg bd-orange-600 sticky-top" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bd-orange-600 sticky-top shadow" data-bs-theme="dark">
             <div class="container container-fluid">
               <a class="navbar-brand" href="index.html">
                 <img src="midia/img/logo/logo_3_sem_fundo.png" width="60" height="60" alt="ícone da empresa"></img>                
@@ -87,15 +87,15 @@
                   <h5 class="offcanvas-title col-6" id="offcanvas-Navbar-Label">Money Control</h5>                   
                   <button type="button" class="btn-close col " data-bs-dismiss="offcanvas" aria-label="Close"></button> 
                 </div>                               
-                <div class="offcanvas-body">
-                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between pe-3">
-                    <h1 class="h5 text-start d-none d-md-block"><strong>Control Money</strong></h1>
-                    <div class=""><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link text-out">Recursos</a></li></div>                    
+                <div class="offcanvas-body ">
+                  <ul class="col align-items-center navbar-nav flex-grow-1 justify-content-between shadow rounded-3 p-2">
+                    <h1 class="h5 text-start d-none d-md-block"><strong>Money Control</strong></h1>
+                    <div class=""><li class="nav-item"><a href="index.html#conteudo_recursos" class="nav-link">Recursos</a></li></div>                    
                     <div class=""><li class="nav-item"><a href="#sobre_nos" class="nav-link ">Sobre nós</a></li></div>
                     <div class=""><li class="nav-item"><a href="#FAQs" class="nav-link">FAQs</a></li></div>
                     <div class="">  
                       <li class="nav-item"> 
-                        <a class="nav-link " href="#" onclick="carregarModal('checkout')" aria-label="Cart"> 
+                        <a class="nav-link pt-3" href="#" onclick="carregarModal('checkout')" aria-label="Cart"> 
                           <svg class="bi" width="24" height="24" aria-hidden="true">
                             <use xlink:href="#cart">
                               #shadow-root (closed)
@@ -159,27 +159,27 @@
                 </div> 
                 <div class="carousel-inner">
                   <div id="0" class="carousel-item active">
-                    <img class="bd-placeholder-img w-100 img-fluid" height="80%" width="100%" src="midia/img/carrosel/Exemplo_app_16x9_1.jpg" alt="imagem do produto">                    
+                    <img class="bd-placeholder-img img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_1.jpg" alt="imagem do produto">                    
                     <div class="carousel-caption d-none d-md-block">                    
-                      <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Comece agora com 7 dias grátis</h1> 
-                      <p class="opacity-75 text-bg-warning rounded-3 p-1">Clieque aqui para solicitar o seu<p> 
+                      <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Comece agora com 7 dias grátis!</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-warning rounded-3 p-1" >Clique aqui!<p></a>
                       <!-- <p><a class="b-verde-destaque btn-lg" href="#">Inscreva-se hoje</a></p>-->                     
                     </div> 
                   </div>
                   <div id="1" class="carousel-item">                        
-                    <img class="bd-placeholder-img w-100 img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_2.jpg" alt="imagem do produto">             
+                    <img class="bd-placeholder-img img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_2.jpg" alt="imagem do produto">             
                     <div class="carousel-caption d-none d-md-block">  
-                      <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Outro exemplo de título.</h1> 
-                      <p class="opacity-75 text-bg-light rounded-3 p-1">Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
+                      <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Com controle financeiro você elimina desperdícios</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-light rounded-3 p-1" onclick="carregarModal('checkout')" aria-label="Cart">Clique aqui!<p></a> 
                       <!-- <p><a class="b-verde-destaque btn-lg" href="#">Leia mais</a></p>-->                    
                     </div>
                   </div>
                   <div id="2" class="carousel-item">
-                    <img  class="bd-placeholder-img w-100 img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
+                    <img  class="bd-placeholder-img img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
                     <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->                  
                     <div class="carousel-caption d-none d-md-block">  
-                      <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Mais uma para garantir.</h1> 
-                      <p class="opacity-75 text-bg-primary rounded-3 p-2 mb-0">Outro conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p> 
+                      <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Direcione seu dinheiro para investimentos!</h1> 
+                      <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"></a><p class="opacity-75 text-bg-primary rounded-3 p-2 mb-0">Clique aqui!</p></a> 
                       <!-- <p><a class="b-verde-destaque btn-lg" href="#">Função</a></p>-->
                     </div>                   
                   </div>
@@ -208,7 +208,7 @@
                   <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gerencie suas finanças com inteligência</h1>
                   <p>O Typebot ajuda você a tomar decisões rápidas e precisas com base nos seus dados financeiros, tudo por uma conversa simples.</p>                  
                   <p class="lead"><em>Controle total das suas finanças em segundos. Simples, rápido e automático — do jeito que sua rotina precisa.</em></p>
-                  <a href="#" onclick="carregarModal('saiba-mais-1')" class="btn b-orange-destaque shadow ">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
+                  <a href="javascript:void(0);" onclick="carregarModal('saiba-mais-1')" class="btn b-orange-destaque shadow ">Saiba Mais</a><!--Ao clicar no link <a> é aberto o modal que está dentro de modais.html-->                    
                 </div>
               </div>
             </div><!-- Fim Conteúdo do recurso estático 1-->
@@ -225,7 +225,7 @@
                   </ul>
                   <div class="call-to-action">
                     <p></p>
-                    <a href="#" onclick="carregarModal('saiba-mais-2')" class="btn b-orange-destaque shadow ">Saiba Mais</a>
+                    <a href="javascript:void(0);" onclick="carregarModal('saiba-mais-2')" class="btn b-orange-destaque shadow ">Saiba Mais</a>
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -247,51 +247,51 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  PERGUNTA FREQUENTE Nº 1
+                  Como faço para criar uma conta?
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Resposta da pergunta<code> "palavra chave de destaque".</code> Este é o corpo sanfonado do primeiro item.</div>
+                <div class="accordion-body">Após comprar o Money Control você terá <code>"acesso"</code> ao cadastro e basta seguir as instruções. Será necessário fornecer seu login e criar uma senha segura.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  PERGUNTA FREQUENTE Nº 2
+                  Como o Money Control pode me ajudar a gerenciar minhas finanças?
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do segundo item. Vamos imaginar que ele esteja preenchido com algum conteúdo real.</div>
+                <div class="accordion-body">O Money Control usa inteligência artificial para rastrear seus gastos, sugerir ajustes no orçamento e oferecer insights sobre como <code> melhorar sua saúde financeira.</code> Basta conversar com o chatbot para obter relatórios e dicas personalizadas.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  PERGUNTA FREQUENTE Nº 3
+                  O Money Control é seguro para armazenar meus dados financeiros?
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+                <div class="accordion-body">Sim! O sistema utiliza uma <code>planilha do google sheet</code> dentro da sua própria conta da google, isso garante que seus dados financeiros estejam sempre seguros. Além disso, você pode configurar autenticação em dois fatores para mais segurança.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  PERGUNTA FREQUENTE Nº 4
+                  Como faço para criar categorias de despesas e receitas?
                 </button>
               </h2>
               <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+                <div class="accordion-body">Você não precisa criar categoria! basta dizer ao chatbot qual despesa deseja adicionar, que a inteligência artificial ira <code>categorizar de forma automatica</code> como "Alimentação", "Transporte" ou "Saúde" e muito mais, e ele organizará seus gastos automaticamente.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                  PERGUNTA FREQUENTE Nº 5
+                  O Money Control me ajuda a economizar dinheiro?
                 </button>
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Conteúdo de espaço reservado para este acordeão, que tem como objetivo demonstrar a <code> "palavra chave de destaque".</code> Este é o corpo sanfonado do terceiro item. Nada mais empolgante acontecendo aqui em termos de conteúdo, apenas preenchendo o espaço para torná-lo, pelo menos à primeira vista, um pouco mais representativo de como ficaria em uma aplicação no mundo real.</div>
+                <div class="accordion-body">Sim! Ele ajuda a organizar suas <code></code>receitas e despesas.</code> Isso lhe ajuda a pensar no futuro com mais planejamento e sem gastos desnecessários.</div>
               </div>
             </div>
           </div>
@@ -319,7 +319,7 @@
         <!--Começo do Rodapé-->
         <div class="container h-100 d-inline">
             <footer class="container d-flex flex-wrap justify-content-between align-items-center">
-              <p class="col-md-5 mb-0 text-body-secondary">© 2025 Control Money, SA</p> 
+              <p class="col-md-5 mb-0 text-body-secondary">© 2025 Money Control , SA</p> 
               <a href="/" class="col-md-2 d-flex align-items-center justify-content-center" aria-label="Logo da empresa"> 
                 <svg class="bi rounded-circle" width="55" height="55" aria-hidden="true">
                   <image xlink:href="midia/img/robo_money.png" width="55" height="55" alt="logo da empresa"></image>
