@@ -281,17 +281,15 @@
 
 /*
  * Customizações do background em movimento
- */
+ 
 body {
     background-image: url('../midia/icons/attach_money.svg');
     background-size: 200px;
     animation: moveBG 120s infinite alternate linear;
     background-blend-mode: multiply;
-    background-position: center;
-    
-
-    
+    background-position: center; 
 }
+
 body::before {
     content: "";
     position: absolute;
@@ -304,8 +302,7 @@ body::before {
     z-index: -1;
 }
 
-
 @keyframes moveBG {
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 100%; }
-}
+}*/
