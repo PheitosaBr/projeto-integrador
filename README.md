@@ -13,7 +13,7 @@
 
 ## Frameworks
 
-*     BootStrap 5.3 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+*      BootStrap 5.3 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ## Ferramentas
 
@@ -31,7 +31,7 @@
 
 # Site:
 
-*     https://pheitosabr.github.io/projeto-integrador/
+* https://pheitosabr.github.io/projeto-integrador/
 
 ## Desenvolvedores Frontend:
 
