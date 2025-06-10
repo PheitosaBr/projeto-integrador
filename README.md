@@ -108,10 +108,6 @@ _TODOS_
 
 	⚫ Apresentação prévia, em sala de aula para o professor.
  
-_Adriane e Neiva_
-
-	⚫ Exibir e apresentar o projeto final para o público na apresentação final.
-	⚫ Criar QR Code para direcioanr ao site no final da apresentação ao público
  
 _Daniel, Marcos e Miguel_
 
