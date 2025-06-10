@@ -16,6 +16,8 @@
         
     </head>
     <body>
+      <div class="background-svg-container"></div><!--Container para o SVG "$" de fundo-->
+
       <!--Links para ícones e Símbolos-->        
       <svg xmlns="http://www.w3.org/2000/svg" class="d-none"><!--Links para ícones e símbolos-->
           <symbol id="check2" viewBox="0 0 16 16">
@@ -159,7 +161,7 @@
                 </div> 
                 <div class="carousel-inner">
                   <div id="0" class="carousel-item active">
-                    <img class="bd-placeholder-img img-fluid" height="80%" src="midia/img/carrosel/Exemplo_app_16x9_1.png" alt="imagem do produto">                    
+                    <img class="bd-placeholder-img img-fluid" src="midia/img/carrosel/Exemplo_app_16x9_1.png" alt="imagem do produto">                    
                     <div class="carousel-caption d-none d-md-block">                    
                       <h1 class="opacity-75 text-bg-warning rounded-3 p-1 mb-0">Comece agora com 7 dias grátis!</h1> 
                       <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-warning rounded-3 p-1" >Clique aqui!<p></a>
@@ -167,7 +169,7 @@
                     </div> 
                   </div>
                   <div id="1" class="carousel-item">                        
-                    <img class="bd-placeholder-img img-fluid" height="50%" src="midia/img/carrosel/Exemplo_app_16x9_2.png" alt="imagem do produto">             
+                    <img class="bd-placeholder-img img-fluid" src="midia/img/carrosel/Exemplo_app_16x9_2.png" alt="imagem do produto">             
                     <div class="carousel-caption d-none d-md-block">  
                       <h1 class="opacity-75 text-bg-light rounded-3 p-1 mb-0">Com controle financeiro você elimina desperdícios</h1> 
                       <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-light rounded-3 p-1" onclick="carregarModal('checkout')" aria-label="Cart">Clique aqui!<p></a> 
@@ -175,8 +177,7 @@
                     </div>
                   </div>
                   <div id="2" class="carousel-item">
-                    <img  class="bd-placeholder-img img-fluid" height="50%" src="midia/img/carrosel/Exemplo_app_16x9_3.png" alt="imagem do produto">  
-                    <!-- <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>  -->                  
+                    <img  class="bd-placeholder-img img-fluid" src="midia/img/carrosel/Exemplo_app_16x9_5.png" alt="3 imagens de interação com o BOT">  
                     <div class="carousel-caption d-none d-md-block">  
                       <h1 class="opacity-75 text-bg-primary rounded-3 p-1 mb-0">Direcione seu dinheiro para investimentos!</h1> 
                       <a class="link-clique-aqui" href="javascript:void(0);" onclick="carregarModal('checkout') " aria-label="Cart"><p class="opacity-75 text-bg-primary rounded-3 p-2 mb-0">Clique aqui!</p></a> 
@@ -190,18 +191,18 @@
                 </button> 
                 <button class="carousel-control-next" type="button" data-bs-target="#myCarouselAutoplaying" data-bs-slide="next"> 
                   <span class="carousel-control-next-icon rounded-5 shadow  p-4" aria-hidden="true"></span> 
-                  <span class="visually-hidden">Póximo</span> 
+                  <span class="visually-hidden">Póximo</span>
                 </button>
               </div>                        
           </section>
           <!--Fim Conteúdo dos recursos Coarrossel-->
 
           <!--Conteúdo dos recursos estáticos-->
-          <section id="conteudo_recursos" class="mb-1 pt-1 p-2">
-            <div class="container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-5 shadow "><!--Conteúdo do recurso estático 1-->
+          <section id="conteudo_recursos" class="container mb-1 pt-1 p-2">
+            <div class="card container-fluid border col-xxl-8 mt-5 mb-3 px-4 py-2 shadow"><!--Conteúdo do recurso estático 1-->
               <div class="row flex-lg-row-reverse align-items-center g- py-1">             
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="midia/img/1x1/Exemplo_app_1x1_3.jpeg" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-circle-25 shadow-sm p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
+                  <img src="midia/img/1x1/Exemplo_app_1x1_3.jpeg" class="d-block mx-lg-auto img-fluid border border-secondary rounded-end-5 shadow p-3 mb-5 bg-body-tertiary" alt="Demonstração do Typebot" width="600" height="400" loading="lazy">
                   <!--Imagem do produto-->
                 </div>
                 <div class="col-lg-6">                  
@@ -212,8 +213,8 @@
                 </div>
               </div>
             </div><!-- Fim Conteúdo do recurso estático 1-->
-            <div class="container-fluid border col-xxl-8 px-4 py-5 shadow "><!--Conteúdo do recurso estático 2-->
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
+            <div class="card container-fluid border col-xxl-8 mt-3 mb-3 px-4 py-2 shadow"><!--Conteúdo do recurso estático 2-->
+              <div class="row flex-lg-row-reverse align-items-center g-4 py-1">
                 <div class="col-lg-6">                  
                   <h2>Transforme sua gestão financeira com o Typebot</h2>
                   <p class="destaque">Chega de planilhas complicadas. O Typebot te entrega respostas, alertas e decisões inteligentes — tudo em um só lugar.</p>
@@ -229,7 +230,7 @@
                   </div>                  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="midia/img/1x1/Imagem do texto.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow-sm p-3 mb-5 bg-body-tertiary rounded-start-2" alt="Demonstração do Typebot" width="600" height="400" loading="lazy"><!--Imagem do produto-->
+                  <img src="midia/img/1x1/Exemplo_app_1x1_2.png" class="d-block mx-lg-auto img-fluid border border-secondary shadow p-3 mb-1 rounded-start-5" alt="Demonstração do Typebot" width="600" height="400" loading="lazy"><!--Imagem do produto-->
                 </div>
             </div><!-- Fim Conteúdo do recurso estático 2-->
           </section>
@@ -242,7 +243,7 @@
         <div class="b-example-divider-2"></div><!--Barra de divisão-->
         
         <!--Conteúdo das FAQs-->
-        <div id="FAQs" class="container mt-4">
+        <div id="FAQs" class="container mt-4 mb-4 border shadow px-0">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -291,7 +292,7 @@
                 </button>
               </h2>
               <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Sim! Ele ajuda a organizar suas <code></code>receitas e despesas.</code> Isso lhe ajuda a pensar no futuro com mais planejamento e sem gastos desnecessários.</div>
+                <div class="accordion-body">Sim! Ele ajuda a organizar suas <code>receitas e despesas.</code> Isso lhe ajuda a pensar no futuro com mais planejamento e sem gastos desnecessários.</div>
               </div>
             </div>
           </div>
@@ -301,12 +302,12 @@
         <div class="b-example-divider-2"></div><!--Barra de divisão-->
 
         <!-- Início Conteúdo Quem somos / sobre Nós -->
-        <section id="sobre_nos" class="container mt-4"><!--Conteúdo Sobre nós-->
-          <div class="row flex-lg-row-reverse">
-            <div class="col-lg-6">
-              <img src="" class="d-block mx-lg-auto img-fluid border border-secondary rounded shadow-sm p-3 mb-5 bg-body-tertiary" alt="Foto da equipe" width="600" height="400" loading="lazy"><!--Foto da equipe-->
+        <section id="sobre_nos" class="card container mt-4 mb-4 shadow"><!--Conteúdo Sobre nós-->
+          <div class="row flex-lg-row-reverse mt-5 mb-3 px-4 py-2">
+            <div class="col-sm-6 ">
+              <img src="" class="d-block mx-lg-auto img-fluid border border-secondary rounded shadow p-3 mb-5 bg-body-tertiary" alt="Foto da equipe" width="600" height="400" loading="lazy"><!--Foto da equipe-->
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <h3 class="h1">Quem somos</h3>
               <p>Nossa equipe conta com 4 programadores que se conheceram no curso de formação do SENAC. Somos profissionais de diversas áreas que já tinham em sua história o interesse em comum em trabalhar com tecnologia da informação. Com o propósito de desenvolver sites, sistemas ou aplicativos, corrigir erros e otimizar sistemas, sempre com foco na necessidade real do cliente e alta qualidade em atendimento.</p>
             </div>
@@ -317,20 +318,20 @@
         <div class="b-example-divider-2"></div><!--Barra de divisão-->
 
         <!--Começo do Rodapé-->
-        <div class="container h-100 d-inline">
-            <footer class="container d-flex flex-wrap justify-content-between align-items-center">
-              <p class="col-md-5 mb-0 text-body-secondary">© 2025 Money Control , SA</p> 
-              <a href="#carrossel_recursos" class="col-md-2 d-flex align-items-center justify-content-center" aria-label="Logo da empresa">                
-                <img src="midia/img/logo/seta_laranja.png" width="55" height="55" alt="logo da empresa"></img>                
-              </a> 
-              <ul class="nav col-md-5 justify-content-end"> 
-                <!-- <li class="nav-item"><a href="#topo" class="nav-link px-2 text-body-secondary">Topo</a></li> -->
-                <li class="nav-item"><a href="#conteudo_recursos" class="nav-link px-2 text-body-secondary">Recursos</a></li>
-                <li class="nav-item"><a href="#sobre_nos" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
-                <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-              </ul> 
-            </footer>
-          </div><!--Fim do Rodapé-->
+        <div class="container-fluid h-100 d-inline">
+          <footer class="card  align-items-center row">
+            <p class="col-sm-2 mb-0 text-body-secondary">© 2025 Money Control, SA</p> 
+            <a href="#carrossel_recursos" class="col-sm-2 d-flex align-items-center justify-content-center" aria-label="Logo da empresa">                
+              <img src="midia/img/logo/seta_laranja.png" width="55" height="55" alt="logo da empresa"></img>                
+            </a> 
+            <ul class="nav col-sm-4 justify-content-end"> 
+              <!-- <li class="nav-item"><a href="#topo" class="nav-link px-2 text-body-secondary">Topo</a></li> -->
+              <li class="nav-item"><a href="#conteudo_recursos" class="nav-link px-2 text-body-secondary">Recursos</a></li>
+              <li class="nav-item"><a href="#sobre_nos" class="nav-link px-2 text-body-secondary">Sobre Nós</a></li>
+              <li class="nav-item"><a href="#FAQs" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            </ul> 
+          </footer>
+        </div><!--Fim do Rodapé-->
 
         <!--Scripts-->
         <script src="js/color-modes.js"></script>
